@@ -288,6 +288,11 @@ hr {
   justify-content: space-between;
 }
 
+
+.slider__inner a {
+  text-decoration: none;
+}
+
 .slider__item {
   width: 23%;
   padding: 20px 0;
@@ -765,16 +770,10 @@ display: none;
   outline: none;
 }
 
-.slick-slide:focus {
+.slick-slide:focus, .slick-current:focus, .slick-active:focus {
   outline: 0;
 }
 
-.slick-current:focus {
-  outline: 0;
-}
-.slick-active:focus {
-  outline: 0;
-}
 
 /* Social */
 

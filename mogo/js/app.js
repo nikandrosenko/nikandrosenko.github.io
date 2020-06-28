@@ -32,6 +32,10 @@ $(function() {
     $("#nav a").removeClass("active");
     $this.addClass("active");
 
+    $("#slider__inner a").removeClass("active");
+    $this.addClass("active");
+    
+
     $("html, body").animate({
       scrollTop: blockOffset
     }, 500);
