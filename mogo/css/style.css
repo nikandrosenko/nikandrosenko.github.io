@@ -305,6 +305,11 @@ hr {
 
 }
 
+.slider__item:hover {
+  color: #f38181;
+  border-top: 3px solid #f38181
+}
+
 .slider__item.active {
   opacity: 1;
 }
