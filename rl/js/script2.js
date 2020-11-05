@@ -2,6 +2,7 @@ $(document).ready(function(){
 	$('.slider2').slick({
 		arrows:true,
 		dots:false,
+		infinite:true,
 		slidesToShow:4,
 		swipeToSlide:true,
 		autoplay:false,
@@ -12,9 +13,15 @@ $(document).ready(function(){
         pauseOnDotsHover:true,
 		responsive:[
 			{
-				breakpoint: 768,
+				breakpoint: 1100,
 				settings: {
-					slidesToShow:1
+					slidesToShow:3
+				}
+			},
+			{
+				breakpoint: 860,
+				settings: {
+					slidesToShow:2
 				}
 			},
 			{

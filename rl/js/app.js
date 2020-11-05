@@ -2,7 +2,8 @@ $(function() {
 
   var navig = $("#navig"),
       tit = $("#tit"),
-      cartBtn = $("#cart-btn"),
+      cartBtn = $("#main-cart-btn"),
+      cartBtnCounter = $("#main-cart-btn__counter"),
       upBtn = $("#up"),
       navH = $("#navbar").innerHeight(),
       headerH = $("#header").innerHeight() + $("#about").innerHeight() + $("#tit").innerHeight(),
@@ -32,6 +33,11 @@ $(function() {
       cartBtn.addClass("fixed");
     } else {
       cartBtn.removeClass("fixed");
+    }
+    if( scrollOffset >= navH ) {
+      cartBtnCounter.removeClass("min");
+    } else {
+      cartBtnCounter.addClass("min");
     }
     if( scrollOffset >= navH ) {
       upBtn.addClass("on");
