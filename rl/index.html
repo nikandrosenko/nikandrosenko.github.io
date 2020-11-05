@@ -25,8 +25,8 @@
                             <li><a data-scroll='#contacts' href="">Контакты</a></li>
                         </ul>
                     </div>
-                    <div class="navbar-wrap__tel">
-                        <button class="btn__tel">8 (495) 773-06-78</button>
+                    <div class="navbar-wrap-tel">
+                        <a class="tel" href="tel:+84957730678">8 (495) 773-06-78</a>
                         <button data-popup="popup-order" class="cart-btn" id="cart-btn">
                             <span class="cart-btn__counter js-cart-total-count-items"></span>
                         </button>
@@ -1686,7 +1686,7 @@
                 <div class="promo__subtitle">
                     и получи скидку - 10% к заказу
                 </div>
-                <button class="promo__btn">
+                <button data-scroll='#menu' class="promo__btn">
                     Заказать!
                 </button>
             </div>
@@ -1734,7 +1734,7 @@
         <div class="container">
             <div class="footer-wrap">
                 <div>© Рис Лосось, 2020</div>
-                <button class="conf-btn" data-popup="popup-order">Политика конфиденциальности</button>
+                <button class="conf-btn" data-popup="popup-conf">Политика конфиденциальности</button>
                 <div class='mon-logo'>
                     <div>Разработано в</div>
                     <div><img src="img/MoonDes.png" alt=""></div>
@@ -1744,40 +1744,28 @@
     </div>
     <!-- /.footer -->
 
-    <!-- popup-order -->
-<div class="popup popup-order">
+    <!-- popup-conf -->
+<div class="popup popup-conf">
     <div class="popup__wrapper">
       <div class="popup__inner">
         <div class="popup__content">
           <button class="btn-close popup__btn-close popup-close"></button>
-          <h2 class="page-title popup__title">Заполните форму</h2>
-          <p class="popup__subtitle popup__subtitle--order">Мы привезем вам горячую пиццу за 50 минут</p>
-          <div class="order">
-            <img class="order__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
-            <h3 class="order__title">
-              <span class="order-product-title"></span>
-              <span class="order-product-price"></span> &#8381;
-            </h3>
-            <p class="order__size"></p>
-            <form class="form form-send">
-              <input class="order-info-title" type="hidden" name="пицца">
-              <input class="order-info-price" type="hidden" name="цена">
-              <input class="order-info-size" type="hidden" name="размер">
-              <input class="form__input" type="text" name="имя" placeholder="Имя" required>
-              <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
-              <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
-              <select class="form__input" name="оплата">
-                <option value="Оплата наличными">Оплата наличными</option>
-                <option value="Оплата картой">Оплата картой</option>
-              </select>
-              <button class="btn form__btn" type="submit">Отправить</button>
-            </form>
-          </div>
+          <h2 class="popup__title">Политика конфиденциальности</h2>
+          <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, deleniti. Iste reiciendis magnam voluptatem saepe rem ab aliquam et laudantium eaque provident, id sed temporibus, eius assumenda! Iste, repellat debitis.
+          Rerum alias, iusto ut molestias aspernatur ullam maiores repudiandae beatae voluptatibus, accusantium nam. Recusandae hic, ad distinctio nemo sit doloribus numquam veniam, ut quibusdam atque totam nisi nihil, pariatur alias!
+          Ratione, perferendis veritatis voluptatum nisi quaerat laboriosam ipsam minima fuga, sapiente possimus ut eligendi nemo. Repellendus non voluptas vero itaque cupiditate, culpa, nihil magnam, ipsa suscipit impedit reiciendis repudiandae mollitia.
+          Et molestias necessitatibus iure ipsam numquam, possimus voluptatem harum sapiente neque autem maxime commodi sunt dignissimos fugiat deserunt beatae delectus, ab accusamus explicabo adipisci eos vel. Quibusdam nisi quo numquam!
+          Tempora quidem voluptates alias ad! Tempore sit tempora saepe inventore. Vero, quae provident deserunt dolorum aut eos rem tempora accusantium maxime qui voluptatibus architecto eaque sit, harum placeat, quam eius.
+          Odit, minima! Fuga, tempore cupiditate sunt quisquam vitae in. Molestias dolores distinctio consectetur maiores, ratione quis eveniet dolore inventore similique? Inventore sunt culpa molestiae beatae. Minima placeat aperiam magni fuga!
+          Rem nulla ipsam veritatis consequatur repudiandae sed porro nemo odit, saepe dolor, similique, vel non molestiae harum. Fugiat eos, saepe quidem fuga obcaecati quos consequatur modi quibusdam repudiandae quaerat esse!
+          Deserunt ab vel, ipsum dolore quae totam animi atque? Dignissimos doloremque aliquam eveniet eius. Voluptas aliquam soluta fugit porro consequuntur. Natus magni rem voluptatibus accusantium excepturi iusto quas, vero eos?
+          Beatae sequi delectus iste corporis aliquam. Nobis rem illo magnam necessitatibus ipsa minima harum quae aut. Illo in magnam aperiam ab quasi cupiditate officia harum fugit! Soluta exercitationem in corporis!
+          Repellat distinctio rerum fugit eum ex magnam beatae iusto sed consequatur expedita maxime fuga voluptatibus eos provident aliquam consectetur ipsa commodi, sunt velit consequuntur vero! Laudantium ipsum accusamus saepe mollitia.</p>
         </div>
       </div>
     </div>
   </div>
-  <!-- /.popup-order -->
+  <!-- /.popup-conf -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>
@@ -1786,6 +1774,7 @@
     <!-- <script src="js/script3.js"></script> -->
     <script src="js/app.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/myLib.js"></script>
 
 </body>
 </html>
