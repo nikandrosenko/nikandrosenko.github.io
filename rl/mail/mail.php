@@ -7,7 +7,7 @@ if ($method !== 'POST') {
 }
 
 $project_name = 'Рис Лосось';
-$admin_email = 'order@ris-losos.ru';
+$admin_email = 'varzaid@gmail.com';
 $form_subject = 'Заявка с сайта Рис Лосось';
 $message = '';
 
