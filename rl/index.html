@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рис Лосось</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9b4dfa4eef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <div class="navbar-wrap">
+                    <button class="logo-btn" id="logo-btn"></button>
+                    <div class="navbar__menu">
+                        <ul>
+                            <li><button class="logo-btn" id="logo-btn"></button></li>
+                            <li><a data-scroll='#about' href="">О нас</a></li>
+                            <li><a data-scroll='#menu' href="">Меню</a></li>
+                            <li><a data-scroll='#delivery' href="">Доставка</a></li>
+                            <li><a data-scroll='#contacts' href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-wrap-tel">
+                        <a class="tel" href="tel:+84957730678">8 (495) 773-06-78</a>
+                        <button data-popup="popup-cart" class="main-cart-btn" id="main-cart-btn">
+                            <span class="main-cart-btn__counter min js-cart-total-count-items" id="main-cart-btn__counter"></span>
+                        </button>
+                    </div>
+                    <div class="navbar__burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.navbar -->
+        <div class="hero" id="hero">
+            <div class="container__slider-mobile">
+                <div class="slider-mobile">
+                    <div class="slider-mobile__item">
+                        <img src="img/banners/ban1.png" alt="">
+                    </div>   
+                    <div class="slider-mobile__item">
+                        <img src="img/banners/ban2.png" alt="">
+                    </div>   
+                    <div class="slider-mobile__item">
+                        <img src="img/banners/ban3.png" alt="">
+                    </div>   
+                </div>
+        
+            </div>
+            <div class="container__slider">
+                <div class="slider">
+                    <div class="slider-item">
+                        <div class="slider-item__title">
+                            скидка 20%<br>в день рождения
+                        </div>
+                        <div class="slider-item__subtitle">
+                            Действует на все меню неделю после дня рождения<br>при предъявлении документа
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item__title">
+                            Счастливые часы!<br>
+                        </div>
+                        <div class="slider-item__title2">
+                            с 12 до 17 скидка 20%
+                        </div>
+                        <div class="slider-item__subtitle">
+                            На все роллы и пиццу по будним дням
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item__title">
+                            Пицца в подарок<br>к заказу!
+                        </div>
+                        <div class="slider-item__subtitle">
+                            Сделай заказ до 1 декабря и получи любую пиццу в подарок
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.hero -->
+    </header>
+    <!-- /.header -->
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="about-wrap">
+                <div class="about-wrap__title">
+                    Доставка еды от команды поваров «РисЛосось» — это не только очень вкусно, но и выгодно. Мы выбираем лучшие продукты, которые можем предложить вам по самой лучшей цене. Благодаря нашей ценовой политике, вы можете позволить себе заказывать любимые вкусные блюда не только по праздникам, но и тогда, когда захотите. С нашей доставкой вы можете сэкономить время на готовке и посвятить его своим близким!
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.about -->
+
+    <div class="menu"  id="menu">
+        <div class="title" id="tit">
+            <div class="logo-btn2"></div>
+            <div>Меню</div>
+        </div>
+        <div class="navbar2" id="navig">
+            <div class="container">
+                <div class="navbar2-wrap">
+                    <ul>
+                        <li><a data-scroll='#sushi' href="">Суши и Гунканы</a></li>
+                        <li><a data-scroll='#roll' href="">Роллы</a></li>
+                        <li><a data-scroll='#hroll' href="">Роллы запеченые</a></li>
+                        <li><a data-scroll='#pizza' href="">Пицца</a></li>
+                        <li><a data-scroll='#set' href="">Сеты</a></li>
+                        <li><a data-scroll='#soup' href="">Супы и Закуски</a></li>
+                        <li><a data-scroll='#drink' href="">Напитки</a></li>
+                        <li><a data-scroll='#wok' href="">Wok</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog">
+            <div class="container">
+                <div class="type" id='sushi'>
+                    <div class="type__line"></div>
+                    <div class="type__title">Суши и Гунканы</div>
+                </div>
+                <div class="slider2">
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Лосось" data-product-price="80" data-product-src="img/menu/sushi/los.jpg">
+                                <div>
+                                    <img src="img/menu/sushi/los.jpg" class="product__img" alt="">
+                                    <div class="product__title">Лосось</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">80</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/30</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Копченый Лосось" data-product-price="80" data-product-src="img/menu/sushi/los_kop.jpg">
+                                <div>
+                                    <img src="img/menu/sushi/los_kop.jpg" class="product__img" alt="">
+                                    <div class="product__title">Копченый Лосось</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">80</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/30</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Копченый Угорь" data-product-price="80" data-product-src="img/menu/sushi/ug_kop.jpg">
+                                <div>
+                                    <img src="img/menu/sushi/ug_kop.jpg" class="product__img" alt="">
+                                    <div class="product__title">копченый угорь</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">80</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/30</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Кайеси Нигири" data-product-price="80" data-product-src="img/menu/sushi/kae.jpg">
+                                <div>
+                                    <img src="img/menu/sushi/kae.jpg" class="product__img" alt="">
+                                    <div class="product__title">кайеси нигири</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">80</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/35</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Водоросли Чука" data-product-price="80" data-product-src="img/menu/sushi/chuka.jpg">
+                                <div>
+                                    <img src="img/menu/sushi/chuka.jpg" class="product__img" alt="">
+                                    <div class="product__title">водоросли чука</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">80</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/35</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Острая Креветка" data-product-price="80" data-product-src="img/menu/sushi/krev_s.jpg">
+                                <div>
+                                    <img src="img/menu/sushi/krev_s.jpg" class="product__img" alt="">
+                                    <div class="product__title">острая креветка</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">80</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/35</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Острый Лосось" data-product-price="80" data-product-src="img/menu/sushi/los_s.jpg">
+                                <div>
+                                    <img src="img/menu/sushi/los_s.jpg" class="product__img" alt="">
+                                    <div class="product__title">Острый Лосось</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">80</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/35</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Острый Тунец" data-product-price="80" data-product-src="img/menu/sushi/tun_s.jpg">
+                                <div>
+                                    <img src="img/menu/sushi/tun_s.jpg" class="product__img" alt="">
+                                    <div class="product__title">Острый Тунец</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">80</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/35</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Острый Угорь" data-product-price="80" data-product-src="img/menu/sushi/ug_s.jpg">
+                                <div>
+                                    <img src="img/menu/sushi/ug_s.jpg" class="product__img" alt="">
+                                    <div class="product__title">Острый Угорь</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">80</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/35</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Копченый Лосось" data-product-price="80" data-product-src="img/menu/sushi/tori.jpg">
+                                <div>
+                                    <img src="img/menu/sushi/tori.jpg" class="product__img" alt="">
+                                    <div class="product__title">Копченый лосось</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">80</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/30</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ./ суши -->
+            <div class="container">
+                <div class="type" id='roll'>
+                    <div class="type__line"></div>
+                    <div class="type__title">Роллы</div>
+                </div>
+                <div class="slider2">
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Аляска" data-product-price="350" data-product-src="img/menu/rolls/alyas.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/alyas.jpg" class="product__img" alt="">
+                                    <div class="product__title">Аляска</div>
+                                    <div class="product__subtitle">Лосось, краб-крем, авокадо, огурец</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">350</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Калифорния с Крабом" data-product-price="320" data-product-src="img/menu/rolls/cal_tob.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/cal_tob.jpg" class="product__img" alt="">
+                                    <div class="product__title">калифорния с крабом</div>
+                                    <div class="product__subtitle">Крем-краб, огурец, авокадо, майонез, массаго</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/220</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Авокадо Маки" data-product-price="180" data-product-src="img/menu/rolls/avoc.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/avoc.jpg" class="product__img" alt="">
+                                    <div class="product__title">авокадо маки</div>
+                                    <div class="product__subtitle">вокадо, огурец, кунжут</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">180</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/200</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Дабл Филабельфия" data-product-price="420" data-product-src="img/menu/rolls/fil_dabl.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/fil_dabl.jpg" class="product__img" alt="">
+                                    <div class="product__title">дабл филабельфия</div>
+                                    <div class="product__subtitle">Угорь, лосось, сливочный сыр,огурец, авокадо, кунжут</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">420</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/260</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Динамит" data-product-price="260" data-product-src="img/menu/rolls/din.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/din.jpg" class="product__img" alt="">
+                                    <div class="product__title">динамит</div>
+                                    <div class="product__subtitle">Креветка, авокадо, огурец, соус спайси</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">260</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/190</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Калифорния Креветка" data-product-price="320" data-product-src="img/menu/rolls/cal.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/cal.jpg" class="product__img" alt="">
+                                    <div class="product__title">калифорния креветка</div>
+                                    <div class="product__subtitle">Креветка, огурец, авокадо, майонез, массаго</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/220</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Камчатка" data-product-price="320" data-product-src="img/menu/rolls/cam.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/cam.jpg" class="product__img" alt="">
+                                    <div class="product__title">камчатка</div>
+                                    <div class="product__subtitle">Лосось, краб-крем, паприка, омлет, сливочный сыр, спайси соус, зелень</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/240</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Канадский Тобико" data-product-price="320" data-product-src="img/menu/rolls/can_tob.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/can_tob.jpg" class="product__img" alt="">
+                                    <div class="product__title">канадский тобико</div>
+                                    <div class="product__subtitle">Лосось, авокадо, огурец, майонез, масаго</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/220</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Канадский Роял" data-product-price="390" data-product-src="img/menu/rolls/can_tob_r.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/can_tob_r.jpg" class="product__img" alt="">
+                                    <div class="product__title">канадский роял</div>
+                                    <div class="product__subtitle">Лосось, креветка, сливочный сыр, авокадо, огурец, масаго</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">390</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Нагойя" data-product-price="420" data-product-src="img/menu/rolls/nag.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/nag.jpg" class="product__img" alt="">
+                                    <div class="product__title">нагойя</div>
+                                    <div class="product__subtitle">Угорь, сливочный сыр, авокадо, кунжут</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">420</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Нью-Йорк" data-product-price="320" data-product-src="img/menu/rolls/new_y.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/new_y.jpg" class="product__img" alt="">
+                                    <div class="product__title">нью-йорк</div>
+                                    <div class="product__subtitle">Копченый лосось, сливочный сыр, авокадо, огурец, кунжут, ореховый соус</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/220</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Россо Нери" data-product-price="340" data-product-src="img/menu/rolls/ross.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/ross.jpg" class="product__img" alt="">
+                                    <div class="product__title">россо нери</div>
+                                    <div class="product__subtitle">Копченый лосось, сливочный сыр, омлет, сладкий соус чили, кунжут </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">340</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/260</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Саке Ролл" data-product-price="260" data-product-src="img/menu/rolls/sake.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/sake.jpg" class="product__img" alt="">
+                                    <div class="product__title">саке ролл</div>
+                                    <div class="product__subtitle">Ролл с лососем</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">260</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Спайси Саке Гурме" data-product-price="320" data-product-src="img/menu/rolls/sake_s_gurme.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/sake_s_gurme.jpg" class="product__img" alt="">
+                                    <div class="product__title">спайси саке гурме</div>
+                                    <div class="product__subtitle">Копченый лосось, креветка, краб-крем, огурец, салат айсберг, соус спайси</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/290</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Текка Ролл" data-product-price="160" data-product-src="img/menu/rolls/tekka.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/tekka.jpg" class="product__img" alt="">
+                                    <div class="product__title">текка ролл</div>
+                                    <div class="product__subtitle">Ролл с тунцом</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">160</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/150</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Фила Пиканте" data-product-price="360" data-product-src="img/menu/rolls/fil.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/fil.jpg" class="product__img" alt="">
+                                    <div class="product__title">фила пиканте</div>
+                                    <div class="product__subtitle">Лосось в спайс соусе, сливочный сыр, огурец, авокадо, кунжут</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/290</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Филадельфия Роял" data-product-price="360" data-product-src="img/menu/rolls/fil_royal.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/fil_royal.jpg" class="product__img" alt="">
+                                    <div class="product__title">филадельфия роял</div>
+                                    <div class="product__subtitle">Лосось, крем-краб, сливочный сыр, огурец, авокадо</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/280</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Фреш Саке Спайси" data-product-price="360" data-product-src="img/menu/rolls/sake_s_fresh.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/sake_s_fresh.jpg" class="product__img" alt="">
+                                    <div class="product__title">фреш саке спайси</div>
+                                    <div class="product__subtitle">Лосось, крем-краб, огурец, авокадо, масаго </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/300</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Фудзияма" data-product-price="420" data-product-src="img/menu/rolls/fudj.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/fudj.jpg" class="product__img" alt="">
+                                    <div class="product__title">фудзияма</div>
+                                    <div class="product__subtitle">Угорь, авокадо, огурец,  масаго, омлет, кунжут, соус Унаги</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">420</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Аляска" data-product-price="180" data-product-src="img/menu/rolls/yasai.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/yasai.jpg" class="product__img" alt="">
+                                    <div class="product__title">ясай</div>
+                                    <div class="product__subtitle">Авокадо, огурец, айсберг, паприка, кунжут, соус сладкий чили</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">180</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/190</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Филадельфия" data-product-price="320" data-product-src="img/menu/rolls/fil_royal.jpg">
+                                <div>
+                                    <img src="img/menu/rolls/fil_royal.jpg" class="product__img" alt="">
+                                    <div class="product__title">филадельфия</div>
+                                    <div class="product__subtitle">Лосось, сливочный сыр</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ./ роллы -->
+            <div class="container">
+                <div class="type" id='hroll'>
+                    <div class="type__line"></div>
+                    <div class="type__title">Роллы запеченые</div>
+                </div>
+                <div class="slider2">
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Аляска спешл" data-product-price="320" data-product-src="img/menu/rolls_hot/alyas.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/alyas.jpg" class="product__img" alt="">
+                                    <div class="product__title">Аляска спешл</div>
+                                    <div class="product__subtitle">Лосось, краб-крем, авокадо, огурец, сырный соус</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/300</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Кани тобико маки" data-product-price="280" data-product-src="img/menu/rolls_hot/kani_tob.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/kani_tob.jpg" class="product__img" alt="">
+                                    <div class="product__title">Кани тобико маки</div>
+                                    <div class="product__subtitle">Лосось, сливочный сыр, огурец ,  масаго, сырный соус, зелень
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">280</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/300</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Кани чили маки" data-product-price="240" data-product-src="img/menu/rolls_hot/kani_chil.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/kani_chil.jpg" class="product__img" alt="">
+                                    <div class="product__title">Кани чили маки</div>
+                                    <div class="product__subtitle">Краб-крем, сливочный сыр, огурец, соус сырный, кунжут</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">240</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/270</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="панко" data-product-price="340" data-product-src="img/menu/rolls_hot/panko.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/panko.jpg" class="product__img" alt="">
+                                    <div class="product__title">панко</div>
+                                    <div class="product__subtitle">Угорь, лосось, креветка , сливочный сыр, авокадо, огурец, кляр</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">340</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/220</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="саке спайси" data-product-price="240" data-product-src="img/menu/rolls_hot/sake_s.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/sake_s.jpg" class="product__img" alt="">
+                                    <div class="product__title">саке спайси</div>
+                                    <div class="product__subtitle">Острый лосось, сливочный сыр, огурец, паприка, кунжут</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">240</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/280</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Сакура маки" data-product-price="350" data-product-src="img/menu/rolls_hot/sakur.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/sakur.jpg" class="product__img" alt="">
+                                    <div class="product__title">Сакура маки</div>
+                                    <div class="product__subtitle">Краб-крем, лосось, масаго</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">350</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="унаги спайси" data-product-price="260" data-product-src="img/menu/rolls_hot/unagi_s.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/unagi_s.jpg" class="product__img" alt="">
+                                    <div class="product__title">унаги спайси</div>
+                                    <div class="product__subtitle">Угорь, сливочный сыр, кунжут, сырный соус</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">260</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/280</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="унаги фила хот" data-product-price="260" data-product-src="img/menu/rolls_hot/unagi_f_h.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/unagi_f_h.jpg" class="product__img" alt="">
+                                    <div class="product__title">унаги фила хот</div>
+                                    <div class="product__subtitle">Угорь, огурец, омлет, сливочный сыр, спайс соус</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">260</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/220</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Теплая Филадельфия" data-product-price="340" data-product-src="img/menu/rolls_hot/fil_ebi.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/fil_ebi.jpg" class="product__img" alt="">
+                                    <div class="product__title">Теплая филадельфия</div>
+                                    <div class="product__subtitle">Лосось, авокадо, сливочный сыр, масаго, кляр</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">340</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Унаги Дзу" data-product-price="260" data-product-src="img/menu/rolls_hot/unagi_dz.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/unagi_dz.jpg" class="product__img" alt="">
+                                    <div class="product__title">унаги дзу</div>
+                                    <div class="product__subtitle">Угорь, крем краб, сырный соус, кунжут, укроп, спайси соус</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">260</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/220</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Спайси Ролл" data-product-price="320" data-product-src="img/menu/rolls_hot/spyc.jpg">
+                                <div>
+                                    <img src="img/menu/rolls_hot/spyc.jpg" class="product__img" alt="">
+                                    <div class="product__title">спайси ролл</div>
+                                    <div class="product__subtitle">Краб-крем, лосось, масаго</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ./ роллы запеченые -->
+            <div class="container">
+                <div class="type" id='pizza'>
+                    <div class="type__line"></div>
+                    <div class="type__title">Пицца</div>
+                </div>
+                <div class="slider2">
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="Барбекю" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/barb.png">
+                                <div>
+                                    <img src="img/menu/pizza/barb.png" class="product__img" alt="">
+                                    <div class="product__title">Барбекю</div>
+                                    <div class="product__subtitle">Соус помодоро, соус барбекю, моцарелла, бекон, куриная грудка</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="4 сыра" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/4cheez.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/4cheez.jpg" class="product__img" alt="">
+                                    <div class="product__title">4 сыра</div>
+                                    <div class="product__subtitle">Соус помодоро, моцарелла, дор блю, пармезан, пикарино</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="карбонара" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/carb.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/carb.png" class="product__img" alt="">
+                                    <div class="product__title">карбонара</div>
+                                    <div class="product__subtitle">Соус сливочный, моцарелла, ветчина, яйцо, салат айсберг</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="фермерская" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/ferm.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/ferm.jpg" class="product__img" alt="">
+                                    <div class="product__title">фермерская</div>
+                                    <div class="product__subtitle">Соус помидоро, моцарелла, куриная грудка, шампиньоны, помидоры, лук красный </div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="баварская" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/bav.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/bav.png" class="product__img" alt="">
+                                    <div class="product__title">баварская</div>
+                                    <div class="product__subtitle">Соус помидоро, моцарелла , колбаски баварские, шампиньоны, помидоры, соленые огурцы 
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="пепперони" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/pepe.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/pepe.jpg" class="product__img" alt="">
+                                    <div class="product__title">пепперони</div>
+                                    <div class="product__subtitle">Соус помодоро, моцарелла, колбаски пепперони</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="капричеза" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/capr.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/capr.jpg" class="product__img" alt="">
+                                    <div class="product__title">капричеза</div>
+                                    <div class="product__subtitle">Соус помодоро, моцарелла, ветчина, шампиньоны, маслины 
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="Жульен" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/jul.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/jul.png" class="product__img" alt="">
+                                    <div class="product__title">Жульен</div>
+                                    <div class="product__subtitle">Сливочный соус, моцарелла, шампиньоны, лук, укроп</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="Мясной квартет" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/myas.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/myas.png" class="product__img" alt="">
+                                    <div class="product__title">Мясной квартет</div>
+                                    <div class="product__subtitle">Соус помидоро, моцарелла, курица, ветчина, пепперони, бекон, соленые огурцы</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="Парма & Руккола" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/parm.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/parm.jpg" class="product__img" alt="">
+                                    <div class="product__title">Парма & Руккола</div>
+                                    <div class="product__subtitle">Соус помодоро, моцарелла, пармская ветчина, руккола</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="шеф" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/shef.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/shef.png" class="product__img" alt="">
+                                    <div class="product__title">шеф</div>
+                                    <div class="product__subtitle">Соус помодоро, моцарелла, бекон, курица, пепперони, ветчина, бекон, шампиньоны</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="гавайская" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/gav.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/gav.png" class="product__img" alt="">
+                                    <div class="product__title">гавайская</div>
+                                    <div class="product__subtitle">Сливочный соус, моцарелла, ветчина, ананас</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="цезарь" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/cez.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/cez.jpg" class="product__img" alt="">
+                                    <div class="product__title">цезарь</div>
+                                    <div class="product__subtitle">Соус Цезарь, моцарелла, курица, помидоры, салат айсберг, пармезан</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="морская" data-product-price="360" data-product-attribute="22см" data-product-src="img/menu/pizza/mor.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/mor.png" class="product__img" alt="">
+                                    <div class="product__title">морская</div>
+                                    <div class="product__subtitle">Соус помодоро, моцарелла, лосось, креветки, мидии, кальмары, маслины, лимон</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="360" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="460" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product medium js-product" data-product-name="маргарита" data-product-price="240" data-product-attribute="22см" data-product-src="img/menu/pizza/marg.jpg">
+                                <div>
+                                    <img src="img/menu/pizza/marg.jpg" class="product__img" alt="">
+                                    <div class="product__title">маргарита</div>
+                                    <div class="product__subtitle">Соус помодоро, моцарелла</div>
+                                </div>
+                                <div>
+                                    <div class="product__sizes">
+                                        <button data-product-attribute-price="240" data-product-attribute-value="22см" class="product__size js-btn-product-attribute is-active" type="button">22см</button>
+                                        <button data-product-attribute-price="320" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">240</div>
+                                            <div class="product-price__subtitle">₽</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ./ пицца -->
+            <div class="container">
+                <div class="type" id='set'>
+                    <div class="type__line"></div>
+                    <div class="type__title">Сеты</div>
+                </div>
+                <div class="slider2">
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="спешл хот ассорти" data-product-price="640" data-product-src="img/menu/sets/ass_sp_h.png">
+                                <div>
+                                    <img src="img/menu/sets/ass_sp_h.png" class="product__img" alt="">
+                                    <div class="product__title">спешл хот ассорти</div>
+                                    <div class="product__subtitle">Суши: 4 гункана (лосось, креветка, мидии, угорь)
+                                        Ролл: Аляска спешл маки</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">640</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/450</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="хот ассорти" data-product-price="1350" data-product-src="img/menu/sets/ass_hot.png">
+                                <div>
+                                    <img src="img/menu/sets/ass_hot.png" class="product__img" alt="">
+                                    <div class="product__title">хот ассорти</div>
+                                    <div class="product__subtitle">Суши: лосось, угорь,
+                                        креветка, краб
+                                        Роллы: Филадельфия спешл, Аляска спешл</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">1350</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/1050</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="васаби микс" data-product-price="1300" data-product-src="img/menu/sets/vas_m.png">
+                                <div>
+                                    <img src="img/menu/sets/vas_m.png" class="product__img" alt="">
+                                    <div class="product__title">васаби микс</div>
+                                    <div class="product__subtitle">Роллы: Калифорния с крабом , Дабл филадельфия , Панко , Кани чили маки</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">1300</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/1050</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Васаби гранд" data-product-price="1450" data-product-src="img/menu/sets/vas_g_h.png">
+                                <div>
+                                    <img src="img/menu/sets/vas_g_h.png" class="product__img" alt="">
+                                    <div class="product__title">Васаби гранд</div>
+                                    <div class="product__subtitle">Суши: 6 гунканов
+                                        (креветка, лосось, краб)
+                                        Роллы: Аляска спешл,Унаги дзу, Спайси ролл</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">1450</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/1080</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="идеал ассорти" data-product-price="1500" data-product-src="img/menu/sets/ass_ideal.png">
+                                <div>
+                                    <img src="img/menu/sets/ass_ideal.png" class="product__img" alt="">
+                                    <div class="product__title">идеал ассорти</div>
+                                    <div class="product__subtitle">Суши: 4 лосось, 2 чука, 2 угорь
+                                        Ролл: Калифорния креветка, Спайси, Филадельфия Роял, Нью-йорк маки</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">1500</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/1200</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="хит" data-product-price="1500" data-product-src="img/menu/sets/ass_hit.png">
+                                <div>
+                                    <img src="img/menu/sets/ass_hit.png" class="product__img" alt="">
+                                    <div class="product__title">хит</div>
+                                    <div class="product__subtitle">Роллы: Филадельфия роял, Канадский тобико, Нью-Йорк, Камчатка</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">1500</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/1200</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="мега ассорти" data-product-price="2400" data-product-src="img/menu/sets/ass_mega.png">
+                                <div>
+                                    <img src="img/menu/sets/ass_mega.png" class="product__img" alt="">
+                                    <div class="product__title">мега ассорти</div>
+                                    <div class="product__subtitle">Роллы: Калифорния краб 2шт, Теплая Филадельфия 2шт, Киото маки 2шт, Унаги спайси 2шт, Филадельфия 2шт</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">2400</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/2300</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="премиум" data-product-price="1200" data-product-src="img/menu/sets/ass_prem.png">
+                                <div>
+                                    <img src="img/menu/sets/ass_prem.png" class="product__img" alt="">
+                                    <div class="product__title">премиум</div>
+                                    <div class="product__subtitle">Роллы: Дабл филадельфия, Филадельфия, Камчатка, Сакура маки, Теплая Калифорния</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">1200</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/1200</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="хот XXL" data-product-price="1900" data-product-src="img/menu/sets/ass_xxl.png">
+                                <div>
+                                    <img src="img/menu/sets/ass_xxl.png" class="product__img" alt="">
+                                    <div class="product__title">хот XXL</div>
+                                    <div class="product__subtitle">Роллы: Кани тобико маки, Аляска спешл, Теплая Калифорния , Аляска, Фреш саке Спайси , Филадельфия Роял</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">1900</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/1650</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ./ сеты -->
+            <div class="container">
+                <div class="type" id='soup'>
+                    <div class="type__line"></div>
+                    <div class="type__title">Супы и Закуски</div>
+                </div>
+                <div class="slider2">
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Мисо с лососем" data-product-price="250" data-product-src="img/menu/soups/m_l.jpg">
+                                <div>
+                                    <img src="img/menu/soups/m_l.jpg" class="product__img" alt="">
+                                    <div class="product__title">Мисо с лососем</div>
+                                    <div class="product__subtitle">Традиционный японский соевый суп с сыром тофу, водорослями и лососем</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">250</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/300</div>
+                                            <div class="product-price__subtitle">мл.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="кимчи с креветками" data-product-price="320" data-product-src="img/menu/soups/kim.jpg">
+                                <div>
+                                    <div class="product__chili"></div>
+                                    <img src="img/menu/soups/kim.jpg" class="product__img" alt="">
+                                    <div class="product__title">кимчи с креветками</div>
+                                    <div class="product__subtitle">Традиционный корейский острый суп с креветками</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/300</div>
+                                            <div class="product-price__subtitle">мл.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Том Ям" data-product-price="360" data-product-src="img/menu/soups/tom.jpg">
+                                <div>
+                                    <div class="product__chili"></div>
+                                    <img src="img/menu/soups/tom.jpg" class="product__img" alt="">
+                                    <div class="product__title">Том Ям</div>
+                                    <div class="product__subtitle">Острый азиатский суп на кокосовом молоке с мидиями, кальмарами и креветками</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">360</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/300</div>
+                                            <div class="product-price__subtitle">мл.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="мисо" data-product-price="180" data-product-src="img/menu/soups/m.jpg">
+                                <div>
+                                    <img src="img/menu/soups/m.jpg" class="product__img" alt="">
+                                    <div class="product__title">мисо</div>
+                                    <div class="product__subtitle">Традиционный японский соевый суп  с сыром тофу, водорослями</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">180</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/300</div>
+                                            <div class="product-price__subtitle">мл.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="картофель по-деревенски" data-product-price="70" data-product-src="img/menu/snacks/kart_d.png">
+                                <div>
+                                    <img src="img/menu/snacks/kart_d.png" class="product__img" alt="">
+                                    <div class="product__title">картофель по-деревенски</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">70</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/150</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="наггетсы" data-product-price="150" data-product-src="img/menu/snacks/nag.png">
+                                <div>
+                                    <img src="img/menu/snacks/nag.png" class="product__img" alt="">
+                                    <div class="product__title">наггетсы</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">150</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/6</div>
+                                            <div class="product-price__subtitle">шт.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="сырные палочки" data-product-price="150" data-product-src="img/menu/snacks/cheez.png">
+                                <div>
+                                    <img src="img/menu/snacks/cheez.png" class="product__img" alt="">
+                                    <div class="product__title">сырные палочки</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">150</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/5</div>
+                                            <div class="product-price__subtitle">шт.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="картофель фри" data-product-price="70" data-product-src="img/menu/snacks/kart_f.png">
+                                <div>
+                                    <img src="img/menu/snacks/kart_f.png" class="product__img" alt="">
+                                    <div class="product__title">картофель фри</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">70</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/150</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ./ супы и закуски -->
+            <div class="container">
+                <div class="type" id='drink'>
+                    <div class="type__line"></div>
+                    <div class="type__title">Напитки</div>
+                </div>
+                <div class="slider2">
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Морс черная смородина" data-product-price="90" data-product-src="img/menu/drink/m_s.jpg">
+                                <div>
+                                    <img src="img/menu/drink/m_s.jpg" class="product__img" alt="">
+                                    <div class="product__title">Морс черная смородина</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">90</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/0,5</div>
+                                            <div class="product-price__subtitle">лт.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="Морс малина" data-product-price="90" data-product-src="img/menu/drink/m_m.png">
+                                <div>
+                                    <img src="img/menu/drink/m_m.png" class="product__img" alt="">
+                                    <div class="product__title">морс малина</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">90</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/0,5</div>
+                                            <div class="product-price__subtitle">лт.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="лимонад домашний" data-product-price="90" data-product-src="img/menu/drink/l.png">
+                                <div>
+                                    <img src="img/menu/drink/l.png" class="product__img" alt="">
+                                    <div class="product__title">лимонад домашний</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">90</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/0,5</div>
+                                            <div class="product-price__subtitle">лт.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product js-product" data-product-name="мохито" data-product-price="120" data-product-src="img/menu/drink/m.png">
+                                <div>
+                                    <img src="img/menu/drink/m.png" class="product__img" alt="">
+                                    <div class="product__title">мохито</div>
+                                    <div class="product__subtitle"></div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">120</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/0,5</div>
+                                            <div class="product-price__subtitle">лт.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ./ напитки -->
+            <div class="container">
+                <div class="type" id='wok'>
+                    <div class="type__line"></div>
+                    <div class="type__title">Wok</div>
+                </div>
+                <div class="slider2">
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product big js-product" data-product-name="Удон с овощами" data-product-price="250" data-product-attribute="Лапша пшеничная" data-product-src="img/menu/wok/u_o.jpg">
+                                <div>
+                                    <img src="img/menu/wok/u_o.jpg" class="product__img" alt="">
+                                    <div class="product__title">Удон с овощами</div>
+                                    <div class="product__subtitle">Перец болгарский, шампиньоны, пекинская капуста, морковь, лук, соевые ростки, кинза, перец халапеньо, соус китайский</div>
+                                </div>
+                                <div>
+                                    <div class="product2__sizes">
+                                        <button data-product-attribute-price="250" data-product-attribute-value="Лапша пшеничная" class="product2__size js-btn-product-attribute is-active" type="button">Лапша пшеничная</button>
+                                        <button data-product-attribute-price="250" data-product-attribute-value="Лапша гречневая" class="product2__size js-btn-product-attribute" type="button">Лапша гречневая</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">250</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product big js-product" data-product-name="Удон с курицей" data-product-price="290" data-product-attribute="Лапша пшеничная" data-product-src="img/menu/wok/u_kur.jpg">
+                                <div>
+                                    <img src="img/menu/wok/u_kur.jpg" class="product__img" alt="">
+                                    <div class="product__title">Удон с курицей</div>
+                                    <div class="product__subtitle">Курица, перец болгарский, шампиньоны, пекинская капуста, морковь, лук, соевые ростки, кинза, перец халапеньо, соус китайский</div>
+                                </div>
+                                <div>
+                                    <div class="product2__sizes">
+                                        <button data-product-attribute-price="290" data-product-attribute-value="Лапша пшеничная" class="product2__size js-btn-product-attribute is-active" type="button">Лапша пшеничная</button>
+                                        <button data-product-attribute-price="290" data-product-attribute-value="Лапша гречневая" class="product2__size js-btn-product-attribute" type="button">Лапша гречневая</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">290</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/300</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product big js-product" data-product-name="Удон с говядиной" data-product-price="320" data-product-attribute="Лапша пшеничная" data-product-src="img/menu/wok/u_g.jpg">
+                                <div>
+                                    <img src="img/menu/wok/u_g.jpg" class="product__img" alt="">
+                                    <div class="product__title">Удон с говядиной</div>
+                                    <div class="product__subtitle">Говядина, перец болгарский, шампиньоны, пекинская капуста, морковь, лук, соевые ростки, кинза, перец халапеньо, соус китайский</div>
+                                </div>
+                                <div>
+                                    <div class="product2__sizes">
+                                        <button data-product-attribute-price="320" data-product-attribute-value="Лапша пшеничная" class="product2__size js-btn-product-attribute is-active" type="button">Лапша пшеничная</button>
+                                        <button data-product-attribute-price="320" data-product-attribute-value="Лапша гречневая" class="product2__size js-btn-product-attribute" type="button">Лапша гречневая</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/300</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product big js-product" data-product-name="Удон с креветками" data-product-price="350" data-product-attribute="Лапша пшеничная" data-product-src="img/menu/wok/u_kr.jpg">
+                                <div>
+                                    <img src="img/menu/wok/u_kr.jpg" class="product__img" alt="">
+                                    <div class="product__title">Удон с креветками</div>
+                                    <div class="product__subtitle">Креветки, перец болгарский, шампиньоны, пекинская капуста, морковь, лук, соевые ростки, кинза, перец халапеньо, соус китайский</div>
+                                </div>
+                                <div>
+                                    <div class="product2__sizes">
+                                        <button data-product-attribute-price="350" data-product-attribute-value="Лапша пшеничная" class="product2__size js-btn-product-attribute is-active" type="button">Лапша пшеничная</button>
+                                        <button data-product-attribute-price="350" data-product-attribute-value="Лапша гречневая" class="product2__size js-btn-product-attribute" type="button">Лапша гречневая</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">350</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/300</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product big js-product" data-product-name="рис с овощами" data-product-price="220" data-product-src="img/menu/wok/r_o.jpg">
+                                <div>
+                                    <img src="img/menu/wok/r_o.jpg" class="product__img" alt="">
+                                    <div class="product__title">рис с овощами</div>
+                                    <div class="product__subtitle">Перец болгарский, шампиньоны, пекинская капуста, морковь, лук, соевые ростки, кинза, перец халапеньо, соус китайский</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">220</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/250</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product big js-product" data-product-name="рис с курицей" data-product-price="290" data-product-src="img/menu/wok/r_kur.jpg">
+                                <div>
+                                    <img src="img/menu/wok/r_kur.jpg" class="product__img" alt="">
+                                    <div class="product__title">рис с курицей</div>
+                                    <div class="product__subtitle">Курица, перец болгарский, шампиньоны, пекинская капуста, морковь, лук, соевые ростки, кинза, перец халапеньо, соус китайский</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">290</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/350</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product big js-product" data-product-name="рис с говядиной" data-product-price="320" data-product-src="img/menu/wok/r_g.jpg">
+                                <div>
+                                    <img src="img/menu/wok/r_g.jpg" class="product__img" alt="">
+                                    <div class="product__title">рис с говядиной</div>
+                                    <div class="product__subtitle">Говядина, перец болгарский, шампиньоны, пекинская капуста, морковь, лук, соевые ростки, кинза, перец халапеньо, соус китайский</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">320</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/350</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider2-item">
+                        <div class="container-product">
+                            <div class="product big js-product" data-product-name="рис с креветками" data-product-price="350" data-product-src="img/menu/wok/r_kr.jpg">
+                                <div>
+                                    <img src="img/menu/wok/r_kr.jpg" class="product__img" alt="">
+                                    <div class="product__title">рис с креветками</div>
+                                    <div class="product__subtitle">Креветки, перец болгарский, шампиньоны, пекинская капуста, морковь, лук, соевые ростки, кинза, перец халапеньо, соус китайский</div>
+                                </div>
+                                <div>
+                                    <div class="product-price">
+                                        <div class="product-price-wrap"> 
+                                            <div class="product-price__title js-product-price-value">350</div>
+                                            <div class="product-price__subtitle">₽</div>
+
+                                            <div class="product-price__title">/350</div>
+                                            <div class="product-price__subtitle">гр.</div>
+                                        </div>
+                                        <button class="product-price__btn js-btn-add-to-cart">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            <!-- ./ wok -->
+        </div>
+
+    </div>
+    <!-- /.menu -->
+
+    <div class="delivery" id="delivery">
+        <div class="container">
+            <div class="delivery__title">
+                Доставка
+            </div>
+            <div class="delivery-wrap">
+                <div class="delivery-wrap__title">
+                    Мы заботимся не только о качестве нашего продукта, но и об удобстве  сервиса для Вас. Бесплатная доставка осуществляется в зоны:
+                </div>
+                <div class="delivery-wrap__subtitle">
+                    Пикино, Мышецкое, КП Зеленый город, Озерецкое, Останкино, Лобня, ЖК Мечта, Рыбаки, ЖК Пески, Рождествено, Удино, Каменка
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.delivery -->
+
+    <div class="promo">
+        <div class="container">
+            <div class="promo-wrap">
+                <div class="promo__title">
+                    закажи доставку на сайте
+                </div>
+                <div class="promo__subtitle">
+                    и получи скидку - 10% к заказу
+                </div>
+                <button data-scroll='#menu' class="promo__btn">
+                    Заказать!
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- /.promo -->
+
+    <div class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__title">
+                Контакты
+            </div>
+            <div class="contacts-wrap">
+                <div class="contacts-wrap__item">
+                    <div>
+                        <div class="address__title">
+                            Время работы
+                        </div>
+                        <div class="address__subtitle">
+                            Пн-Вс: 10-22
+                        </div>
+                    </div>
+                    <div>
+                        <div class="address__title">
+                            Адрес
+                        </div>
+                        <div class="address__subtitle">
+                            Бульвар Мечта д.2
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-wrap__item">
+                    <div>
+                        <div class="address__title">
+                            Почта
+                        </div>
+                        <div class="address__subtitle">
+                            <a href="mailto:mail@ris-losos.ru">mail@ris-losos.ru</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="address__title">
+                            Телефон
+                        </div>
+                        <div class="address__subtitle">
+                            8 (495) 773-06-78
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="ymap"></div>
+        </div>
+    </div>
+    <!-- /.contacts -->
+
+    <button data-scroll='#navbar' class="up"
+    id="up"><i class="fas fa-angle-up"></i>
+    </button>
+    <!-- /.up -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div>© Рис Лосось, 2020</div>
+                <button class="conf-btn" data-popup="popup-conf">Политика конфиденциальности</button>
+                <div class='mon-logo'>
+                    <div class="develop">Разработано в</div>
+                    <div><img src="img/MoonDes.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.footer -->
+
+    <div class="popup popup-conf">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <button class="btn-close popup__btn-close popup-close"></button>
+                    <h2 class="popup__title">Политика конфиденциальности</h2>
+                    <div class="subtitle">
+                        <h3>1. Общие положения</h3><br>
+                        1.1. Настоящая Политика обработки персональных данных (далее – «Политика») разработана и применяется обществом с ограниченной ответственностью «Новые Технологии», ОГРН 1167847188827 (далее - «Оператор») в соответствии с Федеральным законом от 27.07.2006 г. № 152-ФЗ «О персональных данных».<br>
+                        1.2. Основные термины, используемые в настоящей Политике в соответствии с положениями Федерального закона от 27.07.2006 г. № 152-ФЗ «О персональных данных»:<br>
+                        а) <b>персональные данные</b> – любая информация, относящаяся прямо или косвенно к определенному или определяемому физическому лицу (субъекту персональных данных, субъекту);<br>
+                        б) <b>оператор персональных данных (оператор)</b> – юридическое лицо самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;<br>
+                        в) <b>обработка персональных данных</b> – любое действие (операция) или совокупность действий (операций) с персональными данными, совершаемых с использованием средств автоматизации или без их использования;<br>
+                        г) <b>автоматизированная обработка персональных данных</b> – обработка персональных данных с помощью средств вычислительной техники;<br>
+                        д) <b>предоставление персональных данных</b> – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;<br>
+                        е) <b>блокирование персональных данных</b> – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);<br>
+                        ж) <b>уничтожение персональных данных</b> – действия, в результате которых становится невозможным восстановить содержание персональных данных в информационной системе персональных данных и (или) в результате которых уничтожаются материальные носители персональных данных;<br>
+                        з) <b>обезличивание персональных данных</b> – действия, в результате которых становится невозможным без использования дополнительной информации определить принадлежность персональных данных конкретному субъекту персональных данных;<br>
+                        и) <b>информационная система персональных данных</b> – совокупность содержащихся в базах данных персональных данных и обеспечивающих их обработку информационных технологий и технических средств.<br>
+                        1.3. Настоящая Политика применяется в отношении всех персональных данных, которые могут быть получены от Субъекта персональных данных Оператором посредством регистрации, авторизации, оформления заказа Субъектом персональных данных посредством сайта http://ris-losos.ru/ (далее – «Сайт») и/или мобильного приложения Оператора (далее - «Приложение»).<br>
+                        Далее по тексту «Сайт» и «Приложение» при совместном упоминание именуются «Сервис».<br>
+                        1.4. Настоящая Политика определяет порядок и условия осуществления обработки персональных данных Субъектов, передавших свои персональные данные для обработки Оператору с использованием и без использования средств автоматизации, устанавливает процедуры, направленные на предотвращение нарушений законодательства Российской Федерации, связанных с обработкой персональных данных.<br>
+                        1.5. Политика разработана с целью обеспечения защиты прав Субъектов при обработке их персональных данных.<br>
+                        1.6. Оператор осуществляет обработку следующих персональных данных Субъекта: фамилия, имя, отчество; номер телефона; адрес электронной почты; почтовый адрес; данные об оказанных и оказываемых Субъекту услугах, история заказов Субъекта, обращений Субъекта к Оператору посредством использования Сервиса.<br>
+                        1.7. При использовании Сервиса Субъектом персональных данных Оператор обрабатывает также иные обезличенные данные, которые автоматически передаются в процессе использования Сервиса посредством установленного на техническом устройстве Субъекта программного обеспечения: сведения об используемом браузере (или иной программе, с помощью которой осуществляется доступ к Сервису); IP-адрес; данные файлов cookie.<br>
+                        <br>
+                        <h3>2. Цели сбора персональных данных</h3><br>
+                        2.1. Оператор осуществляет обработку персональных данных Субъектов путем ведения баз данных автоматизированным, механическим, ручным способами в целях: 2.1.1. обработки заказов, запросов или других действий Субъекта, связанных с регистрацией, авторизацией на Сервисе, осуществлением заказов через Сервис;<br>
+                        2.1.2. оповещения об изменении пользовательского соглашения об условиях доставки, порядка оказания услуг, меню, перечня проводимых Оператором акций, скидок и иных маркетинговых мероприятий.<br>
+                        2.1.3. в иных целях в случае, если соответствующие действия Оператора не противоречат действующему законодательству, деятельности Оператора, и на проведение указанной обработки получено согласие Субъекта персональных данных.<br>
+                        2.2. Данные, указанные в п. 1.7. настоящей Политики, обрабатываются в целях осуществления аналитики Сервиса, принципов использования Сервиса, совершенствования функционирования Сервиса, решения технических проблем Сервиса, разработки новых продуктов, расширения услуг, выявления популярности мероприятий и определения эффективности рекламных кампаний; обеспечения безопасности и предотвращения мошенничества, предоставления эффективной клиентской поддержки.<br>
+                        2.3. Обработка персональных данных Субъекта осуществляется Оператором с момента получения согласия Субъекта персональных данных.<br>
+                        Согласие на обработку персональных данных может быть дано Субъектом персональных данных в любой форме, позволяющей подтвердить факт получения согласия, если иное не установлено федеральным законом: в письменной, устной или иной форме, предусмотренной действующим законодательством, в том числе посредством совершения Субъектом персональных данных конклюдентных действий (акцепта размещенной на Сервисе оферты – пользовательского соглашения об условиях доставки). В случае отсутствия согласия Субъекта персональных данных на обработку его персональных данных, такая обработка не осуществляется.<br>
+                        2.4. Персональные данные Субъектов получаются Оператором:<br>
+                        2.4.1. посредством личной передачи Субъектом персональных данных при внесении сведений в формы в электронном виде на Сервисе Оператора;<br>
+                        2.4.2. посредством личной передачи Субъектом персональных данных посредством сообщения в устной форме по телефону в процессе оформления заказа;<br>
+                        2.4.3. иными способами, не противоречащими законодательству Российской Федерации и требованиям международного законодательства о защите персональных данных. 2.5. Согласие на обработку персональных данных считается предоставленным посредством совершения Субъектом персональных данных любого действия или совокупности следующих действий:<br>
+                        2.5.1. оформления заказа на Сервисе Оператора;<br>
+                        2.5.2. проставления на Сервисе в соответствующей форме отметки о согласии на обработку персональных данных;<br>
+                        2.5.3. отправки посредством смс кода (сообщения) персональных данных при авторизации/регистрации, оформления Заказа на Сервисе Оператора.<br>
+                        <br>
+                        <h3>3. Правовые основания обработки персональных данных</h3><br>
+                        3.1. Оператор обрабатывает персональные данные Субъекта на основании:<br>
+                        3.1.1. Пользовательского соглашения об условиях доставки, размещенного на Сервисе Оператора;<br>
+                        3.1.2. Устава Оператора.<br>
+                        3.2. Оператор обрабатывает персональные данные Субъекта только в случае их отправки Субъектом через соответствующие электронные формы, расположенные на Сервисе Оператора или переданные лично субъектом посредством телефонной связи при оформлении Заказа. Отправляя свои персональные данные Оператору, Субъект выражает свое согласие с настоящей Политикой.<br>
+                        3.3. Оператор обрабатывает обезличенные данные о Пользователе в случае, если Пользователь разрешил это в настройках браузера (включено сохранение файлов «cookie» и использование технологии JavaScript) в соответствии с положениями настоящей Политики.<br>
+                        <br>
+                        <h3>4. Порядок и условия обработки персональных данных</h3><br>
+                        4.1. Оператор осуществляет обработку персональных данных посредством совершения любого действия (операции) или совокупности действий (операций), включая следующие: сбор; запись; систематизация; накопление; хранение; уточнение (обновление, изменение); извлечение; использование; передача; обезличивание; блокирование; удаление; уничтожение.<br>
+                        4.2. В соответствии с настоящей Политикой Оператор может осуществлять обработку персональных данных самостоятельно, а также с привлечением третьих лиц, которые привлекаются по поручению Оператора и осуществляют обработку для выполнения указанных в настоящей Политики целей.<br>
+                        4.3. В случае поручения обработки персональных данных третьему лицу, объем передаваемых третьему лицу для обработки персональных данных и количество используемых этим лицом способов обработки должны быть минимально необходимыми для выполнения им своих обязанностей перед Оператором. В отношении обработки персональных данных третьим лицом устанавливается обязанность такого лица соблюдать конфиденциальность персональных данных и обеспечивать безопасность персональных данных при их обработке.<br>
+                        4.4. В процессе предоставления услуг, при осуществлении внутрихозяйственной деятельности Оператор использует автоматизированную, с применением средств вычислительной техники, так и неавтоматизированную, с применением бумажного документооборота, обработку персональных данных.<br>
+                        4.5. В отношении персональных данных Субъекта сохраняется конфиденциальность, кроме случаев добровольного предоставления Субъектом своих персональных данных неограниченному кругу лиц. В данном случае Субъект соглашается с тем, что часть его персональных данных становится общедоступной.<br>
+                        <br>
+                        <h3>5. Сведения о реализуемых требованиях к защите персональных данных</h3><br>
+                        5.1. Оператор защищает персональные данные Субъекта в соответствии с требованиями, предъявляемыми к защите такого рода информации, и несет ответственность за использование безопасных методов защиты такой информации.<br>
+                        5.2. Для защиты персональных данных Субъекта, обеспечения их надлежащего использования и предотвращения несанкционированного и/или случайного доступа к ним третьими лицами, Оператор применяет необходимые и достаточные технические и административные меры. Предоставляемые Субъектом персональные данные хранятся на серверах с ограниченным доступом, расположенных в охраняемых помещениях.<br>
+                        5.3. В случае подтверждения факта неточности персональных данных или неправомерности их обработки, персональные данные подлежат их актуализации Оператором, а обработка должна быть прекращена, соответственно.<br>
+                        5.4. Субъект может в любой момент отозвать свое согласие на обработку персональных данных при условии, что подобная процедура не нарушает требований законодательства Российской Федерации.<br>
+                        5.5. Согласие Субъекта персональных данных считается полученным в установленном действующем законодательством и настоящей Политикой порядке и действует до момента направления Субъектом персональных данных соответствующего заявления (уведомления) о прекращении обработки персональных данных по юридическому адресу Оператора: 194017, Санкт-Петербург, проспект Энгельса, дом 63, литера А, помещение 3-Н.<br>
+                        5.5.1. В случае отзыва Субъектом персональных данных согласия на обработку его персональных данных, Оператор должен прекратить их обработку или обеспечить прекращение такой обработки (если обработка осуществляется другим лицом, действующим по поручению Оператора) и в случае, если сохранение персональных данных более не требуется для целей их обработки, уничтожить персональные данные или обеспечить их уничтожение (если обработка персональных данных осуществляется третьим лицом, действующим по поручению Оператора) в срок, не превышающий 30 (Тридцати) дней с даты поступления указанного отзыва, если иное не предусмотрено договором, стороной которого, выгодоприобретателем или поручителем по которому является Субъект, иным соглашением между Оператором и Субъектом персональных данных, либо если Оператор не вправе осуществлять обработку персональных данных без согласия Субъекта персональных данных на основаниях, предусмотренных Федеральным законом № 152-ФЗ «О персональных данных» от
+                        27.07.2006 г. или другими федеральными законами.<br>
+                        <br>
+                        <h3>6. Согласие на получение рекламной информации</h3><br>
+                        6.1. Согласие Субъекта персональных данных на получение рекламной информации, подтверждается посредством:<br>
+                        6.1.1. оформления заказа на Сервисе Оператора;<br>
+                        6.1.2. проставления на Сервисе в соответствующей форме отметки о согласии на обработку персональных данных;<br>
+                        6.1.3. сообщения персональных данных в устной форме, при обращении по телефону Оператора в процессе оформлении заказа, означает согласие Субъекта персональных данных на получение от Оператора и привлеченных Оператором третьих лиц, по сетям электросвязи (по предоставленным номеру мобильного телефона и адресу электронной почты) информационных сообщений, а в том числе информации коммерческого рекламного характера (рекламы).<br>
+                        6.2. Давая согласие, указанное в п. 6.1. настоящей Политики, Субъект персональных данных подтверждает, что действует по своей воле и в своем интересе, а также то, что указанные персональные данные являются достоверными.<br>
+                        <br>
+                        <h3>7. Заключительные положения</h3><br>
+                        7.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты mail@ris-losos.ru, либо на почтовый адрес Оператора: г. Москва, Бульвар Мечта, д.2.<br>
+                        7.2. В настоящем документе будут отражены любые изменения Политики обработки персональных данных Оператором.<br>
+                        7.3. Настоящая Политика размещена по адресу: http://ris-losos.ru/<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.popup-conf -->
+
+    <div class="popup popup-cart">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <button class="btn-close popup__btn-close popup-close"></button>
+                    <h2 class="cart-title">Корзина</h2>
+                    <div class="cart js-cart-wrapper">
+                      <form class="form cart__form">
+                        <div class="cart__items js-cart">
+                        </div>
+                        <div class="cart__totals">
+                          <div>Итого: <span class="cart__bold"><span class="js-cart-total-price"></span> ₽</span></div>
+                        </div>
+                        
+                        <div class="form-wrapper">
+                            <div class="form__main">
+                                <h3 class="cart-subtitle">Заполните форму</h3>
+                                <input class="form__input" type="text" name="Имя" placeholder="Имя" required="">
+                                <input class="form__input" type="text" name="Телефон" placeholder="Телефон" required="">
+                                <input class="form__input" type="text" name="Адрес" placeholder="Адрес" required="">
+                                <input class="js-cart-total-price-input" type="hidden" name="Общая сумма">
+                                <select class="form__input" name="Оплата">
+                                    <option value="Оплата наличными">Оплата наличными</option>
+                                    <option value="Оплата картой">Оплата картой</option>
+                                </select>
+                            </div>
+                            <div class="form-btn-wrapper">
+                                <div class="form-btn-wrapper__text">
+                                    <img src="img/logo.png" alt="">
+                                    <div class="form-btn-wrapper__subtext">При заказе японского меню палочки, имбирь, васаби и соевый соус входят в стоимость</div>
+                                </div>
+                                <button class="btn form__btn" type="submit">Заказать</button>
+                            </div>
+                        </div>
+                      </form>
+                      <div class="cart__empty">
+                        <p class="cart__info">Нет товаров</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- /.popup cart -->
+
+    <div class="popup popup-thanks">
+        <div class="popup__wrapper">
+          <div class="popup__inner">
+            <div class="popup__content">
+              <button class="btn-close popup__btn-close popup-close"></button>
+              <h2 class="page-title popup__title">Успешно отправлено</h2>
+              <p class="popup__subtitle">Спасибо за заказ!<br>Наш оператор перезвонит вам для уточнения деталей в ближайшее время</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- ./popup thanks -->
+
+    <div class="popup popup-error">
+        <div class="popup__wrapper">
+          <div class="popup__inner">
+            <div class="popup__content">
+              <button class="btn-close popup__btn-close popup-close"></button>
+              <h2 class="page-title popup__title">Произошла ошибка</h2>
+              <p class="popup__subtitle">Пожалуйста, сделайте заказ по номеру <a class="popup__link" href="+84957730678">8 (495) 773-06-78</a></p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- ./popup error -->
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script3.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/myLib.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/map.js"></script>
+    <!-- <script src="js/added.js"></script> -->
+
+</body>
+</html>
