@@ -229,6 +229,14 @@ button:focus {
     .header::before {
       display: none; } }
 
+@media (max-width: 413px) {
+  .header {
+    max-height: 220px; } }
+
+@media (max-width: 374px) {
+  .header {
+    max-height: 200px; } }
+
 /* popup start */
 .popup {
   position: fixed;
@@ -1198,6 +1206,18 @@ a.tel {
 .slider-mobile__item img {
   max-width: 100%;
   max-height: 150px; }
+
+@media (max-width: 413px) {
+  .slider-mobile__item {
+    padding: 0px 15px; }
+  .slider-mobile__item img {
+    max-height: 135px; } }
+
+@media (max-width: 374px) {
+  .slider-mobile__item {
+    padding: 0px 15px; }
+  .slider-mobile__item img {
+    max-height: 113px; } }
 
 .about {
   height: 575px;
