@@ -1499,7 +1499,7 @@ a.tel {
 
 @media (max-width: 767px) {
   .menu {
-    height: 4200px; }
+    height: 4250px; }
     .menu::before {
       display: none; }
   .title {
