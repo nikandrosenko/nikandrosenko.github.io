@@ -1197,6 +1197,14 @@ a.tel {
   font-size: 53px;
   margin: 0 0 0px 0; }
 
+.slider-item__title4 {
+  font-family: 'Futura PT';
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  font-size: 45px; }
+
 .slider-item__subtitle {
   margin: 25px 0 0 0;
   font-size: 18px; }
