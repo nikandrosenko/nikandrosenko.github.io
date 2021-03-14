@@ -1351,7 +1351,7 @@ a.tel {
     display: none; } }
 
 .menu {
-  height: 4500px; }
+  height: 4990px; }
   .menu::before {
     content: '';
     position: absolute;
@@ -1442,10 +1442,10 @@ a.tel {
     font-weight: 500;
     font-style: normal;
     letter-spacing: 0.025em;
-    font-size: 15px;
+    font-size: 13.5px;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 25px 17px 25px;
+    padding: 25px 13px 25px;
     display: block;
     color: #ffffff; }
   .navbar2 a:hover {
@@ -1507,7 +1507,7 @@ a.tel {
 
 @media (max-width: 767px) {
   .menu {
-    height: 4250px; }
+    height: 4740px; }
     .menu::before {
       display: none; }
   .title {
