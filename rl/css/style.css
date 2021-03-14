@@ -1160,7 +1160,8 @@ a.tel {
   width: 18px;
   height: 18px;
   background-color: #aeadaf;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: pointer; }
 
 .slider .slick-dots li.slick-active button {
   background-color: #db694b; }
