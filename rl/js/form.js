@@ -39,9 +39,9 @@
       }
 
       if (xhr.response === 'success') {
-        window.location.href = '/thanks.html';
+        window.location.href = './thanks.html';
       } else {
-        window.location.href = '/error.html';
+        window.location.href = './error.html';
       }
 
       form.reset();
