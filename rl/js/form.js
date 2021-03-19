@@ -39,9 +39,9 @@
       }
 
       if (xhr.response === 'success') {
-        document.querySelector('.popup-thanks').classList.add('is-active');
+        window.location.href = '/thanks.html';
       } else {
-        document.querySelector('.popup-error').classList.add('is-active');
+        window.location.href = '/error.html';
       }
 
       form.reset();
