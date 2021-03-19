@@ -62,7 +62,8 @@
   .thanks-wrap {
     background: none;
     box-shadow: none;
-    width: 100vw; }
+    width: 100vw;
+    top: 0%; }
     .thanks-wrap__subtitle {
       font-size: 27px; } }
 
