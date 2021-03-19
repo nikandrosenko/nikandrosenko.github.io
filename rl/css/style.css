@@ -2200,7 +2200,7 @@ input[type="checkbox"] {
       padding: 15px 0 0 0;
       margin: 0px 0 15px 0px; }
     .contacts-wrap {
-      margin: 0 0px 0 20px; }
+      margin: 0 0px 0 0px; }
       .contacts-wrap .address__title {
         font-size: 18px; }
       .contacts-wrap .address__subtitle {
@@ -2220,7 +2220,7 @@ input[type="checkbox"] {
   .contacts {
     height: 200px; }
     .contacts-wrap {
-      margin: 0 -20px 0 30px; }
+      margin: 0 0px 0 20px; }
       .contacts-wrap .address__title {
         font-size: 10px; }
       .contacts-wrap .address__subtitle {
@@ -2261,7 +2261,7 @@ input[type="checkbox"] {
 
 @media (max-width: 374px) {
   .map {
-    margin: 0px 0 0 0;
+    margin: 0px -30px 0 0px;
     width: 120px;
     height: 120px; } }
 
