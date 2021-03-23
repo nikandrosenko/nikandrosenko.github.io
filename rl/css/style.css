@@ -196,7 +196,7 @@ body {
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0.025em;
-  background: url("../img/Back0.jpg") fixed no-repeat 0% 0%;
+  background: url("../img/Back0.webp") fixed no-repeat 0% 0%;
   background-size: cover; }
 
 button,
@@ -216,7 +216,7 @@ button:focus {
     right: 0;
     bottom: 0;
     left: 50%;
-    background: url(../img/header/header-roll.png) no-repeat 0% 0%; }
+    background: url(../img/header/header-roll.webp) no-repeat 0% 0%; }
 
 @media (max-width: 1023px) {
   .header::before {
@@ -391,7 +391,7 @@ button:focus {
   height: 37px;
   text-align: center;
   border-radius: 40px;
-  background: url(../img/cart-btn0.png) no-repeat 0% 0%;
+  background: url(../img/cart-btn0.webp) no-repeat 0% 0%;
   background-size: contain;
   margin: auto auto;
   cursor: pointer; }
@@ -794,7 +794,7 @@ button:focus {
   margin: 0 0 15px 0;
   color: #ffffff;
   border-radius: 20px;
-  background: url(../img/btn.png) no-repeat 50% 50%;
+  background: url(../img/btn.webp) no-repeat 50% 50%;
   cursor: pointer; }
   .form__btn:hover {
     transition: 0.15s;
@@ -912,7 +912,7 @@ button:focus {
   text-transform: uppercase;
   font-size: 14px;
   color: #ffffff;
-  background: url(../img/logo.png) no-repeat 50% 50%;
+  background: url(../img/logo.webp) no-repeat 50% 50%;
   margin: 0 15px; }
   .logo-btn:hover {
     width: 150px;
@@ -920,7 +920,7 @@ button:focus {
     margin: 0 15px 0 -15px;
     transition: 0.5s;
     transform: scale(1);
-    background: url(../img/logo1.png) no-repeat 50% 50%;
+    background: url(../img/logo1.webp) no-repeat 50% 50%;
     background-size: contain; }
   .logo-btn:active {
     text-shadow: 0px 0px 10px #fff;
@@ -940,7 +940,7 @@ a.tel {
   font-size: 14px;
   color: #ffffff;
   border-radius: 20px;
-  background: url(../img/btn.png) no-repeat 50% 50%;
+  background: url(../img/btn.webp) no-repeat 50% 50%;
   cursor: pointer; }
   a.tel:hover {
     transition: 0.15s;
@@ -970,7 +970,7 @@ a.tel {
     width: 150px;
     height: 31px;
     margin: 0 0 0 15px;
-    background: url(../img/logo1.png) no-repeat 50% 50%;
+    background: url(../img/logo1.webp) no-repeat 50% 50%;
     display: block;
     z-index: 11;
     background-size: contain; }
@@ -978,7 +978,7 @@ a.tel {
       width: 39px;
       height: 31px;
       margin: 0 0 0 15px;
-      background: url(../img/logo.png) no-repeat 50% 50%; }
+      background: url(../img/logo.webp) no-repeat 50% 50%; }
   .navbar-wrap-tel {
     position: absolute; }
     .navbar-wrap-tel-tel {
@@ -1249,7 +1249,7 @@ a.tel {
     width: 465px;
     height: 300px;
     z-index: 6;
-    background: url(../img/about-roll.png) no-repeat 0% 0%;
+    background: url(../img/about-roll.webp) no-repeat 0% 0%;
     background-size: cover;
     margin: 100px 0 0 0;
     left: 0%;
@@ -1260,7 +1260,7 @@ a.tel {
     width: 600px;
     height: 588px;
     z-index: 3;
-    background: url(../img/leafs2.png) no-repeat 0% 0%;
+    background: url(../img/leafs2.webp) no-repeat 0% 0%;
     background-size: content;
     margin: 340px 0 0 0;
     top: 0%;
@@ -1277,7 +1277,7 @@ a.tel {
     width: 788px;
     height: 387px;
     z-index: 5;
-    background: url(../img/about-window.png) no-repeat 0% 0%;
+    background: url(../img/about-window.webp) no-repeat 0% 0%;
     border-radius: 10px;
     box-shadow: 5px 0px 10px rgba(2, 3, 6, 0.2); }
   .about-wrap__title {
@@ -1360,7 +1360,7 @@ a.tel {
     width: 628px;
     height: 535px;
     z-index: 4;
-    background: url(../img/Leafs1.png) no-repeat 0% 0%;
+    background: url(../img/Leafs1.webp) no-repeat 0% 0%;
     background-size: content;
     right: 0%;
     transform: translate(0%, -34%); }
@@ -1374,7 +1374,7 @@ a.tel {
   left: -100%;
   width: 39px;
   height: 31px;
-  background: url(../img/logo.png) no-repeat 50% 50%; }
+  background: url(../img/logo.webp) no-repeat 50% 50%; }
   .up2.on {
     margin: 0 5px 0 20px;
     transform: scale(1);
@@ -1410,7 +1410,7 @@ a.tel {
   text-transform: uppercase;
   font-size: 14px;
   color: #ffffff;
-  background: url(../img/logo.png) no-repeat 50% 50%;
+  background: url(../img/logo.webp) no-repeat 50% 50%;
   margin: 0; }
   .logo-btn2:hover {
     width: 150px;
@@ -1418,7 +1418,7 @@ a.tel {
     margin: 0;
     transition: 0.5s;
     transform: scale(1);
-    background: url(../img/logo1.png) no-repeat 50% 50%;
+    background: url(../img/logo1.webp) no-repeat 50% 50%;
     background-size: contain; }
   .logo-btn2:active {
     text-shadow: 0px 0px 10px #fff;
@@ -1591,11 +1591,11 @@ a.tel {
 
 .slider2 .slick-arrow.slick-prev {
   left: 0;
-  background: url("../img/left-arrow.png") 0 0/100% no-repeat; }
+  background: url("../img/left-arrow.webp") 0 0/100% no-repeat; }
 
 .slider2 .slick-arrow.slick-next {
   right: 0;
-  background: url("../img/right-arrow.png") 0 0/100% no-repeat; }
+  background: url("../img/right-arrow.webp") 0 0/100% no-repeat; }
 
 .slider2 .slick-arrow.slick-disabled {
   opacity: 0.2; }
@@ -1691,7 +1691,7 @@ a.tel {
     top: 0;
     right: 10px;
     z-index: 10;
-    background: url(../img/chili.png) no-repeat 0% 0%; }
+    background: url(../img/chili.webp) no-repeat 0% 0%; }
   .product__zigzag {
     position: absolute;
     width: 45px;
@@ -1699,7 +1699,7 @@ a.tel {
     top: 10px;
     right: 15px;
     z-index: 10;
-    background: url(../img/zigzag.png) no-repeat 0% 0%;
+    background: url(../img/zigzag.webp) no-repeat 0% 0%;
     background-size: contain; }
 
 .product-price {
@@ -1738,7 +1738,7 @@ a.tel {
   text-transform: uppercase;
   font-size: 33.75px;
   color: #ffffff;
-  background: url(../img/price-btn.png) no-repeat 50% 50%;
+  background: url(../img/price-btn.webp) no-repeat 50% 50%;
   cursor: pointer; }
   .product-price__btn:hover {
     transition: 0.05s;
@@ -1839,7 +1839,7 @@ a.tel {
     align-self: center;
     width: 226px;
     height: 6px;
-    background: url(../img/line.png) no-repeat 50% 50%; }
+    background: url(../img/line.webp) no-repeat 50% 50%; }
 
 .radio-switch {
   margin-top: 3px;
@@ -1931,7 +1931,7 @@ input[type="checkbox"] {
     width: 515px;
     height: 344px;
     z-index: 3;
-    background: url(../img/leafs3.png) no-repeat 0% 0%;
+    background: url(../img/leafs3.webp) no-repeat 0% 0%;
     background-size: content;
     left: 0%;
     transform: translate(0%, -78%); }
@@ -1957,7 +1957,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(../img/delivery-window.png) no-repeat 0% 0%;
+  background: url(../img/delivery-window.webp) no-repeat 0% 0%;
   border-radius: 10px;
   box-shadow: 5px 0px 10px rgba(2, 3, 6, 0.2);
   z-index: 5;
@@ -1969,7 +1969,7 @@ input[type="checkbox"] {
     width: 465px;
     height: 300px;
     z-index: 10;
-    background: url(../img/sushi.png) no-repeat 0% 0%;
+    background: url(../img/sushi.webp) no-repeat 0% 0%;
     background-size: cover;
     top: 26%;
     right: 0%;
@@ -2060,7 +2060,7 @@ input[type="checkbox"] {
 
 .promo {
   height: 180px;
-  background: url(../img/promo-back.png) no-repeat 0% 0%;
+  background: url(../img/promo-back.webp) no-repeat 0% 0%;
   background-size: cover;
   text-align: center;
   color: #ffffff; }
