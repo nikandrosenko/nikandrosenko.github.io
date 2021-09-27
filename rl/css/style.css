@@ -1369,7 +1369,7 @@ a.tel {
     display: none; } }
 
 .menu {
-  height: 4550px; }
+  height: 5000px; }
   .menu::before {
     content: '';
     position: absolute;
@@ -1525,7 +1525,7 @@ a.tel {
 
 @media (max-width: 767px) {
   .menu {
-    height: 4250px; }
+    height: 4700px; }
     .menu::before {
       display: none; }
   .title {
