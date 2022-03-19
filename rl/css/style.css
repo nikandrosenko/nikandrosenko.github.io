@@ -1369,7 +1369,7 @@ a.tel {
     display: none; } }
 
 .menu {
-  height: 5000px; }
+  height: 5950px; }
   .menu::before {
     content: '';
     position: absolute;
@@ -1525,7 +1525,7 @@ a.tel {
 
 @media (max-width: 767px) {
   .menu {
-    height: 4700px; }
+    height: 5750px; }
     .menu::before {
       display: none; }
   .title {
@@ -1668,6 +1668,8 @@ a.tel {
   padding: 0 0 15px 0;
   overflow: hidden;
   text-align: center; }
+  .product.piz {
+    height: 400px; }
   .product.medium {
     height: 350px; }
   .product.big {
