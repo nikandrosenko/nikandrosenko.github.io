@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('../font/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: rgb(44, 44, 44);
+
 }
 .notfound {
     display: flex;
@@ -11,9 +19,13 @@ body {
 }
 .notfound__element {
     /* border: 1px red solid; */
+    max-width: 100vw;
     color: rgb(202, 202, 202);
-    font-family: fantasy;
-    font-size: 25vh;
+    text-align: center;
+    font-family: PressStart2P;
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 10;
 }
 .notfound__element:hover {
     color: white;
