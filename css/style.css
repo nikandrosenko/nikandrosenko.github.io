@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(44, 44, 44);
+}
+.notfound {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* border: 1px red solid; */
+}
+.notfound__element {
+    /* border: 1px red solid; */
+    color: rgb(202, 202, 202);
+    font-family: fantasy;
+    font-size: 25vh;
+}
+.notfound__element:hover {
+    color: white;
+    text-shadow: 0vh 0vh 1vh white;
+    transition: 0.2s;
+}
