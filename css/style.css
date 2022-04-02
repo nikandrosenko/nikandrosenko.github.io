@@ -31,4 +31,10 @@ body {
     color: white;
     text-shadow: 0vh 0vh 1vh white;
     transition: 0.2s;
+    cursor: default;
 }
+/* .notfound__element:active {
+    color: white;
+    text-shadow: 0vh 0vh 1vh white;
+    transition: 0.2s;
+} */
