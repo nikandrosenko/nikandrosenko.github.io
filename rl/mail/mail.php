@@ -7,12 +7,16 @@ if ($method !== 'POST') {
 }
 
 $project_name = 'Рис Лосось';
-$admin_email = 'varzaid@gmail.com';
+$admin_email = 'order@ris-losos.ru';
 $form_subject = 'Заявка с сайта Рис Лосось';
-$token = "1012537302:AAEKW7whWFDf-N-NFAzjzgq2mNXG5RU9uIk";
+$token = "1426275203:AAEP1vmit2tvoH21XJK8t0fCwrgTNvpBAck";
+$chat_id = "-447824840";
+// для тестов:
+// 1012537302:AAEKW7whWFDf-N-NFAzjzgq2mNXG5RU9uIk
 // -426325228
+// релиз:
+// 1426275203:AAEP1vmit2tvoH21XJK8t0fCwrgTNvpBAck
 // -447824840
-$chat_id = "-426325228";
 $message = '';
 
 $color_counter = 1;
@@ -21,7 +25,27 @@ foreach ($_POST as $key => $value) {
   if ($value === '') {
     continue;
   }
-  
+
+  if (strpos($key, 'Товар') !== false) {
+    $key = 'Товар';
+  }
+  if (strpos($key, 'Количество') !== false) {
+    $key = 'Количество';
+    $value = $value. ' шт.';
+  }
+  if (strpos($key, 'Цена') !== false) {
+    $key = 'Цена';
+    $value = $value. ' р.';
+  }
+  if (strpos($key, 'Аттрибут') !== false) {
+    $key = 'Аттрибут';
+  }
+
+  if ($key === 'Общая_сумма') {
+    $value = $value.' р.';
+    $key = 'Общая сумма';
+  }
+
   $color = $color_counter % 2 === 0 ? '#fff' : '#f8f8f8';
   $message .= "
     <tr style='background-color: $color;'>
@@ -30,17 +54,15 @@ foreach ($_POST as $key => $value) {
     </tr>";
 
   $color_counter++;
-  
+
   if (strpos($key, 'Товар') !== false) {
     $key = '%0A-';
   }
   if (strpos($key, 'Количество') !== false) {
     $key = '-';
-    $value = $value. ' шт.';
   }
   if (strpos($key, 'Цена') !== false) {
     $key = ' = ';
-    $value = $value. ' р.';
   }
   if (strpos($key, 'Аттрибут') !== false) {
     $key = '-';
@@ -58,13 +80,12 @@ foreach ($_POST as $key => $value) {
     $key = '%0A%0AОплата';
   }
 
-  if ($key === 'Общая_сумма') {
-    $value =' =  '.$value.' р.';
+  if ($key === 'Общая сумма') {
+    $value =' =  '.$value;
     $key = '%0A%0AОбщая сумма заказа';
   }
 
   $txt .= "".$key." ".$value." ";
-  // $txt .= "".$key." = ".$value."%0A";
 }
 
 function adopt($text) {

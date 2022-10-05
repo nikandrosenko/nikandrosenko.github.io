@@ -5,14 +5,14 @@
   
     ymaps.ready(function () {
       var myMap = new ymaps.Map('ymap', {
-              center: [56.066600, 37.381244],
+              center: [56.078402, 37.377891],
               zoom: 17
           }, {
               searchControlProvider: 'yandex#search'
           }),
   
           myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-              balloonContent: 'г. Москва, Бульвар Мечта, д.2'
+              balloonContent: 'г. Москва, Бульвар Радости, д.2'
           }, {
               iconLayout: 'default#image',
               iconImageHref: '../img/logo.png',

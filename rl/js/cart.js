@@ -215,7 +215,7 @@
         const productDOMElement = target.closest('.js-product');
         const activeAttributeDOMElement = productDOMElement.querySelector('.js-btn-product-attribute.is-active');
         const productPriceDOMElement = productDOMElement.querySelector('.js-product-price-value');
-
+        
         productPriceDOMElement.textContent = price;
         productDOMElement.setAttribute('data-product-attribute', attribute);
         productDOMElement.setAttribute('data-product-price', price);
