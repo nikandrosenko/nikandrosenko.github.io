@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+/*.wrap {
+    display: flex;
+    justify-content: center;
+}*/
+.form {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    border: 1px solid #323232;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 552px;
+    height: 947px;
+    padding: 93px 97px 0;
+}
+.form__subject {
+    font-family: roboto, arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: #323232;
+    padding-bottom: 48px;
+}
+.telephone_title {
+    font-family: roboto, arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+input {
+    display: block;
+    padding: 10px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    border: 1px solid #9B0741;
+    border-radius: 8px;
+    width: 358px;
+    height: 60px;
+}
+input:hover {
+    border: 3px solid #9B0741;
+}
+input:active {
+    border: 1px solid #FF0000;
+    filter: drop-shadow(1px 1px 4px rgba(190, 65, 65, 0.5));
+    border-radius: 8px;
+}
+.form__btn {
+    margin: 30px 55px 32px;
+    background: #9B0741;
+    border: 1px solid #9B0741;
+    box-shadow: 0px 0px 6px #96d1ff;
+    border-radius: 8px;
+    width: 244px;
+    transition-duration: 0.5s;
+}
+.get_code {
+    font-family: roboto, arial,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.15px;
+    color: #FCEAD6;
+    padding: 23px 29px;
+}
+.entry_options {
+    font-family: roboto, arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    line-height: 17px;
+    letter-spacing: 0.004em;
+    color: #323232;
+    padding: 32px 0 16px 0;
+    border-top: 2px solid #323232;;
+    width: 358px;
+}
+.item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vk_login a{
+    font-family: roboto, arial,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 19px;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+}
+.vk__btn {
+    margin-left: 55px ;
+    display: block;
+    width: 240px;
+    height: 60px;
+    background: #2688EB;
+    border: 1px solid #2688EB;
+    border-radius: 8px;
+}
+.vk,
+.google {
+    padding-left: 13px;
+}
+.google_login a{
+    font-family: roboto, arial,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.15px;
+    color: #323232;
+}
+.google__btn {
+    margin: 32px 55px 0;
+    width: 240px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #323232;
+    border-radius: 8px;
+}
+.help {
+    padding-top: 16px;
+    text-align: center;
+}
+.help a {
+    font-family: roboto, arial,sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.004em;
+    color: #323232;
+}
+.copyright__title {
+    font-family:roboto, arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.004em;
+    color: #CCCCCC;
+}
+.copyright {
+    padding-top: 186px;
+}
+/*--- Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
