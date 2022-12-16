@@ -55,6 +55,9 @@ header {
     align-items: center;
     gap: 15px;
     margin-right: 65px;
+    & svg {
+      fill: $color-wine;
+    }
     &:nth-child(3) {
       margin-right: 50px;
     }
@@ -67,10 +70,16 @@ header {
       gap: 10px;
     }
   }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
   &__burger-btn {
-    width: 30px;
-    height: 20px;
-    background-image: url(../img/header/burger-icon.svg);
+    display: flex;
+    align-items: center;
+    & svg {
+      fill: $color-brown;
+    }
   }
   &__link {
     text-decoration: none;
@@ -83,20 +92,11 @@ header {
     color: $color-wine;
   }
   &__btn {
-    width: 32px;
-    height: 32px;
-  }
-  & .search {
-    background-image: url(../img/header/search-icon.svg);
-  }
-  & .profile {
-    background-image: url(../img/header/profile-icon.svg);
-  }
-  & .favorite {
-    background-image: url(../img/header/favorite-icon.svg);
-  }
-  & .cart {
-    background-image: url(../img/header/cart-icon.svg);
+    display: flex;
+    align-items: center;
+    & svg {
+      fill: $color-brown;
+    }
   }
   // &__city {
   //   font-size: 0.75em;
@@ -118,14 +118,16 @@ main {
 /* -------- trands -------- */
 .trands {
   margin-bottom: 90px;
-  &__list {
+  &__items {
     list-style: none;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
   }
-  &__item {
+  &__link {
+    display: block;
     position: relative;
+    width: 270px;
     min-height: 300px;
     border-radius: 8px;
     flex: 1 0 20%;
@@ -150,14 +152,14 @@ main {
     &:nth-child(6) {
       background-image: url(../img/trands/bomber.png);
     }
-    &:hover .trands__link {
+    &:hover .trands__content {
       bottom: 50%;
       transform: translate(-50%, 50%);
       box-shadow: 0 0 100px 2em $color-brown;
       text-decoration: underline;
     }
   }
-  &__link {
+  &__content {
     position: absolute;
     bottom: 5%;
     left: 50%;
@@ -305,6 +307,7 @@ footer {
   margin-top: 40px;
 }
 .footer-social-icon {
+  text-decoration: none;
   margin-right: 20px;
 }
 .nic {

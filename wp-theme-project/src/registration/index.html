@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="form">
-        <div class="container">
-            <form action="">
-                <h1 class="form__subject">Войти или 
-                     зарегистрироваться</h3>
+    <section class="registration-form">
+        <div class="form">
+            <div class="container">
+             <h1 class="form__subject">Войти или зарегистрироваться</h3>
                 <div class="wrap">
-                    <div class="telephone">
+                    <form action="">
+                        <div class="telephone">
                         <p class="form__telephone telephone_title">Номер телефона</p>
                         <input type="tel" placeholder="+7 900 000 00 00">
-                    </div>
+                        <button class="form__btn get_code">Получить код</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="wrap">
-                    <div class="entry__options"> 
-                    <button class="form__btn get_code">Получить код</button>
-                    <p class="entry_options">Или войдите через соцсеты</p>
+            <div class="wrap">
+                <div class="entry__options"> 
+                    <p class="entry_options">Или войдите через соцсети</p>
                     <button class="vk__btn vk_login">
                         <ul class="item-list">
                             <li><img src="img/logovk.svg" alt="vk"></li>
@@ -37,13 +38,12 @@
                     </button>
                     <p class="help"><a href="#">Нужна помощь?</a></p>
                 </div>
-                <div class="copyright">
-                    <h3 class="copyright__title"><a href="https://policies.google.com/privacy">Сайт использует reCAPTCHA согласно 
-                        Политике конфиденциальности и Условиям обслуживания Google.</a>
-                    </h3>
-                </div>
-            </form>
+            </div>
+            <div class="copyright">
+                <h3 class="copyright__title"><a href="https://policies.google.com/privacy">Отправляя форму вы выражаете согласие с обработкой персональных данных и Политикой конфиденциальности сайта.</a>
+                </h3>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>

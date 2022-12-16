@@ -17,6 +17,8 @@ window.onload = () => {
   // location.append("Город");
   if (ymaps) {
     location.append(ymaps.geolocation.city);
+  } else if (ymaps.geolocation.city == undefined) {
+    location.append("Россия");
   } else {
     location.append("Россия");
   }

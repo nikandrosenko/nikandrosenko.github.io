@@ -60,9 +60,6 @@ header {
   gap: 15px;
   margin-right: 65px;
 }
-.nav__items svg {
-  fill: #9b0741;
-}
 .nav__items:nth-child(3) {
   margin-right: 50px;
 }
@@ -74,16 +71,10 @@ header {
   margin-left: auto;
   gap: 10px;
 }
-.nav__item {
-  display: flex;
-  align-items: center;
-}
 .nav__burger-btn {
-  display: flex;
-  align-items: center;
-}
-.nav__burger-btn svg {
-  fill: #3f1d14;
+  width: 30px;
+  height: 20px;
+  background-image: url(../img/header/burger-icon.svg);
 }
 .nav__link {
   text-decoration: none;
@@ -96,11 +87,20 @@ header {
   color: #9b0741;
 }
 .nav__btn {
-  display: flex;
-  align-items: center;
+  width: 32px;
+  height: 32px;
 }
-.nav__btn svg {
-  fill: #3f1d14;
+.nav .search {
+  background-image: url(../img/header/search-icon.svg);
+}
+.nav .profile {
+  background-image: url(../img/header/profile-icon.svg);
+}
+.nav .favorite {
+  background-image: url(../img/header/favorite-icon.svg);
+}
+.nav .cart {
+  background-image: url(../img/header/cart-icon.svg);
 }
 
 /* -------- main -------- */
@@ -123,16 +123,14 @@ main {
 .trands {
   margin-bottom: 90px;
 }
-.trands__items {
+.trands__list {
   list-style: none;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
-.trands__link {
-  display: block;
+.trands__item {
   position: relative;
-  width: 270px;
   min-height: 300px;
   border-radius: 8px;
   flex: 1 0 20%;
@@ -140,31 +138,31 @@ main {
   transition: 0.4s;
   overflow: hidden;
 }
-.trands__link:nth-child(1) {
+.trands__item:nth-child(1) {
   background-image: url(../img/trands/modnaya-palitra.png);
 }
-.trands__link:nth-child(2) {
+.trands__item:nth-child(2) {
   background-image: url(../img/trands/maxi.png);
 }
-.trands__link:nth-child(3) {
+.trands__item:nth-child(3) {
   background-image: url(../img/trands/style-tshirt.png);
 }
-.trands__link:nth-child(4) {
+.trands__item:nth-child(4) {
   background-image: url(../img/trands/gotic.png);
 }
-.trands__link:nth-child(5) {
+.trands__item:nth-child(5) {
   background-image: url(../img/trands/actual.png);
 }
-.trands__link:nth-child(6) {
+.trands__item:nth-child(6) {
   background-image: url(../img/trands/bomber.png);
 }
-.trands__link:hover .trands__content {
+.trands__item:hover .trands__link {
   bottom: 50%;
   transform: translate(-50%, 50%);
   box-shadow: 0 0 100px 2em #3f1d14;
   text-decoration: underline;
 }
-.trands__content {
+.trands__link {
   position: absolute;
   bottom: 5%;
   left: 50%;
@@ -329,7 +327,6 @@ footer {
 }
 
 .footer-social-icon {
-  text-decoration: none;
   margin-right: 20px;
 }
 
