@@ -9,6 +9,15 @@
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
