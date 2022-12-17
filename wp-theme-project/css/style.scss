@@ -188,9 +188,11 @@ main {
     margin-bottom: 55px;
   }
   &__item {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #000;
   }
   &__subtitle {
     text-align: center;
@@ -362,4 +364,316 @@ ul.footer-contacts-item img {
 a.copy:hover {
   color: #ffe4c7;
   opacity: 1;
+}
+/* -------- registration -------- */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  border: 1px solid #323232;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 456px;
+  min-height: 736px;
+  padding: 32px 50px;
+}
+.form__subject {
+  font-family: roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  color: #323232;
+  padding-bottom: 48px;
+}
+.telephone_title {
+  font-family: roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+input {
+  display: block;
+  padding: 10px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  border: 1px solid #9b0741;
+  border-radius: 8px;
+  width: 244px;
+  height: 60px;
+}
+input:hover {
+  border: 3px solid #9b0741;
+}
+input:active {
+  border: 1px solid #ff0000;
+  filter: drop-shadow(1px 1px 4px rgba(190, 65, 65, 0.5));
+  border-radius: 8px;
+}
+.form__btn {
+  margin: 30px 0px 32px;
+  background: #9b0741;
+  border: 1px solid #9b0741;
+  box-shadow: 0px 0px 6px #96d1ff;
+  border-radius: 8px;
+  width: 244px;
+  transition-duration: 0.5s;
+}
+.form__btn:hover {
+  background-color: #d73c79;
+}
+.form__btn:active {
+  background-color: #d2dbe7;
+  border: 1px solid #d2dbe7;
+}
+.get_code {
+  font-family: roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.15px;
+  color: #fcead6;
+  padding: 23px 29px;
+}
+.entry_options {
+  font-family: roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  line-height: 17px;
+  letter-spacing: 0.004em;
+  color: #323232;
+  padding: 32px 0 16px 0;
+  border-top: 2px solid #323232;
+  width: 358px;
+}
+.item-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vk_login a {
+  font-family: roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 19px;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+}
+.vk__btn {
+  margin-left: 55px;
+  display: block;
+  width: 240px;
+  height: 60px;
+  background: #2688eb;
+  border: 1px solid #2688eb;
+  border-radius: 8px;
+}
+.vk,
+.google {
+  padding-left: 13px;
+}
+.google_login a {
+  font-family: roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.15px;
+  color: #323232;
+}
+.google__btn {
+  margin: 32px 55px 0;
+  width: 240px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #323232;
+  border-radius: 8px;
+}
+.help {
+  padding-top: 16px;
+  text-align: center;
+}
+.help a {
+  font-family: roboto, arial, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.004em;
+  color: #323232;
+}
+.copyright__title a {
+  font-family: roboto, arial, sans-serif;
+  font-family: "Roboto";
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.004em;
+  color: #9f9f9f;
+}
+.copyright {
+  text-align: center;
+  padding-top: 40px;
+}
+/* -------- 404 -------- */
+.error_wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 160px;
+  display: flex;
+  align-items: center;
+}
+.error_img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.error_title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.error_text_1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.3px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.error_text_2 {
+  color: #999999;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.btn-base {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #fcead6;
+  background-color: #9b0741;
+  border: solid 2px #9b0741;
+  max-width: 310px;
+  padding: 16px 51px;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+.btn-base:hover {
+  color: #9b0741;
+  border: solid 2px #9b0741;
+  background-color: #fcead6;
+}
+/* -------- media -------- */
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 20px;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-top-left {
+    max-width: 60%;
+  }
+  .footer-top-center {
+    max-width: 40%;
+  }
+  .footer-top-right {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .error_wrapper {
+    padding: 60px 20px;
+  }
+
+  .error_img {
+    display: none;
+  }
+
+  .error_title {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .error_text_1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .error_text_2 {
+    padding-bottom: 40px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-top-left {
+    max-width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-top-center {
+    max-width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-top-right {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  footer h4 {
+    text-align: center;
+  }
+  ul.footer-contacts-item li {
+    justify-content: center;
+  }
+
+  footer li {
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .copy {
+    margin-bottom: 20px;
+  }
 }
