@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <script defer src="./js/tel.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Войти/Регистрация</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <section class="registration-form">
-        <div class="form">
-            <div class="container">
-             <h1 class="form__subject">Войти или зарегистрироваться</h3>
-                <div class="wrap">
-                    <form action="">
-                        <div class="telephone">
-                        <p class="form__telephone telephone_title">Номер телефона</p>
-                        <input type="tel" placeholder="+7 900 000 00 00">
-                        <button class="form__btn get_code">Получить код</button>
-                        </div>
-                    </form>
-                </div>
-            <div class="wrap">
-                <div class="entry__options"> 
-                    <p class="entry_options">Или войдите через соцсети</p>
-                    <button class="vk__btn vk_login">
-                        <ul class="item-list">
-                            <li><img src="./img/reg/logovk.svg" alt="vk"></li>
-                            <li class="vk"><h4><a href="https://vk.com/login">ВКонтакте</a></h4></li>
-                        </ul>
-                    </button>
-                    <button class="google__btn google_login">
-                        <ul class="item-list">
-                            <li><img src="./img/reg/icons-google.svg" alt="google"></li>
-                            <li class="google"><h4><a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1408489427%3A1671040025340663&hl=ru&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh7U5D8DEgxk-o8oFJpCiKmXfQORmbkuR2WWaJeGXksyAAplqE-YjTRnfJrCz9FYjihIYgoatA">Google</a></h4></li>
-                        </ul>
-                    </button>
-                    <p class="help"><a href="#">Нужна помощь?</a></p>
-                </div>
+      <div class="form">
+        <div class="container">
+          <h1 class="form__subject">Войти или зарегистрироваться</h1>
+          <div class="wrap">
+            <form action="">
+              <div class="telephone">
+                <p class="form__telephone telephone_title">Номер телефона</p>
+                <input type="tel" placeholder="+7 (___) ___-__-__" data-slots="_" />
+                <button class="form__btn get_code">Получить код</button>
+              </div>
+            </form>
+          </div>
+          <div class="wrap">
+            <div class="entry__options">
+              <p class="entry_options">Или войдите через соцсети</p>
+              <button class="vk__btn vk_login">
+                <ul class="item-list">
+                  <li><img src="./img/reg/logovk.svg" alt="vk" /></li>
+                  <li class="vk">
+                    <h4><a href="https://vk.com/login">ВКонтакте</a></h4>
+                  </li>
+                </ul>
+              </button>
+              <button class="google__btn google_login">
+                <ul class="item-list">
+                  <li><img src="./img/reg/icons-google.svg" alt="google" /></li>
+                  <li class="google">
+                    <h4>
+                      <a
+                        href="https://accounts.google.com/v3/signin/identifier?dsh=S-1408489427%3A1671040025340663&hl=ru&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh7U5D8DEgxk-o8oFJpCiKmXfQORmbkuR2WWaJeGXksyAAplqE-YjTRnfJrCz9FYjihIYgoatA"
+                        >Google</a
+                      >
+                    </h4>
+                  </li>
+                </ul>
+              </button>
+              <p class="help"><a href="#">Нужна помощь?</a></p>
             </div>
-            <div class="copyright">
-                <h3 class="copyright__title"><a href="https://policies.google.com/privacy">Отправляя форму вы выражаете согласие с обработкой персональных данных и Политикой конфиденциальности сайта.</a>
-                </h3>
-            </div>
+          </div>
+          <div class="copyright">
+            <h3 class="copyright__title">
+              <a href="https://policies.google.com/privacy"
+                >Отправляя форму вы выражаете согласие с обработкой персональных данных и Политикой конфиденциальности
+                сайта.</a
+              >
+            </h3>
+          </div>
         </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
