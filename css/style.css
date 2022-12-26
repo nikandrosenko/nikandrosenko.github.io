@@ -4,7 +4,11 @@
   font-weight: normal;
   font-style: normal;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
 body {
   -moz-user-select: none;
   -o-user-select: none;
@@ -16,11 +20,11 @@ body {
   color: rgb(202, 202, 202);
   font-family: PressStart2P;
 }
-
 .links {
   position: absolute;
+  top: 30px;
+  left: 20px;
 }
-
 .links__list {
   list-style: none;
   display: flex;
@@ -30,17 +34,14 @@ body {
 .links__item::before {
   content: "->";
 }
-
 .links__item a {
   text-decoration: none;
   color: rgb(202, 202, 202);
   transition: 0.4s;
 }
-
 .links__item a:hover {
   color: white;
 }
-
 main {
   height: 100vh;
   display: flex;
@@ -48,7 +49,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 .notfound {
   font-size: 6vw;
   font-weight: 10;
@@ -57,7 +57,6 @@ main {
   text-transform: uppercase;
   transition: 0.4s;
 }
-
 .notfound:hover {
   color: white;
   text-shadow: 0vh 0vh 1vh white;
