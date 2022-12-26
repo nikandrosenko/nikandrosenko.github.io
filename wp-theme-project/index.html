@@ -4,6 +4,7 @@
     <script defer src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script defer src="./js/main.js"></script>
+    <script defer src="./js/burger.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +17,38 @@
       <div class="wrapper">
         <nav class="nav">
           <div class="nav__items">
-            <button class="nav__burger-btn">
+            <button class="nav__burger-btn" id="burg-btn">
               <svg width="30" height="20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 20H30V16.6667H0V20ZM0 11.6667H30V8.33333H0V11.6667ZM0 0V3.33333H30V0H0Z" />
               </svg>
             </button>
-            <!-- <div class="nav__burger-menu hidden"></div> -->
+            <div class="burger" id="burg-menu">
+              <ul class="burger__list">
+                <li class="burger__item"><a class="burger__link" href="#" id="burg-link">ВСЕ ТОВАРЫ</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">РАСПРОДАЖА!</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">НОВИНКИ</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Бренды</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Женская коллекция</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Мужская коллекция</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Спортивная коллекция</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Аксессуары</a></li>
+              </ul>
+              <ul class="burger__list burger__list_sublist hidden" id="burg-submenu">
+                <li class="burger__item"><a class="burger__link" href="#">Блузки и рубашки</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Брюки</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Верхняя одежда</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Джемперы и кардиганы</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Джинсы</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Костюмы</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Пиджаки, жилеты, жакеты</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Платья и сарафаны</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Свитера</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Рубашки</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Свитшоты и худи</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Туники</a></li>
+                <li class="burger__item"><a class="burger__link" href="#">Футболки и топы</a></li>
+              </ul>
+            </div>
           </div>
           <ul class="nav__items">
             <li class="nav__item"><a class="nav__link" href="./404.html">Женщинам</a></li>

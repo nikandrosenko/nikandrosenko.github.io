@@ -7,6 +7,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+.hidden {
+  display: none;
 }
 
 button {
@@ -49,6 +54,7 @@ header {
 }
 
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 30px 5px;
@@ -101,6 +107,42 @@ header {
 }
 .nav__btn svg {
   fill: #3f1d14;
+}
+
+.burger {
+  position: absolute;
+  top: 85%;
+  left: 0;
+  display: flex;
+  border: 1px solid #afabab;
+  border-radius: 10px;
+  box-shadow: 2px -4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  z-index: 2;
+}
+.burger__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+.burger__link {
+  text-decoration: none;
+  color: #3f1d14;
+  font-size: 24px;
+}
+.burger__link:hover, .burger__link:focus, .burger__link:active {
+  display: block;
+  background: #ffe4c7;
+  border-radius: 8px;
+}
+.burger__link:hover__list_sublist, .burger__link:focus__list_sublist, .burger__link:active__list_sublist {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 /* -------- main -------- */
@@ -660,78 +702,4 @@ input:active {
   background-color: #fcead6;
 }
 
-/* -------- media -------- */
-@media screen and (max-width: 1024px) {
-  footer {
-    padding: 20px;
-  }
-  .footer-top {
-    flex-wrap: wrap;
-  }
-  .footer-top-left {
-    max-width: 60%;
-  }
-  .footer-top-center {
-    max-width: 40%;
-  }
-  .footer-top-right {
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .error_wrapper {
-    padding: 60px 20px;
-  }
-  .error_img {
-    display: none;
-  }
-  .error_title {
-    font-size: 40px;
-    padding-bottom: 20px;
-  }
-  .error_text_1 {
-    font-size: 20px;
-    font-weight: 500;
-  }
-  .error_text_2 {
-    padding-bottom: 40px;
-  }
-  footer {
-    padding: 20px;
-  }
-  .footer-top {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .footer-top-left {
-    max-width: 100%;
-    padding: 20px 0;
-    text-align: center;
-  }
-  .footer-top-center {
-    max-width: 100%;
-    padding: 20px 0;
-    text-align: center;
-  }
-  .footer-top-right {
-    max-width: 100%;
-    padding: 20px 0;
-  }
-  footer h4 {
-    text-align: center;
-  }
-  ul.footer-contacts-item li {
-    justify-content: center;
-  }
-  footer li {
-    margin-bottom: 20px;
-  }
-  .footer-bottom {
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .copy {
-    margin-bottom: 20px;
-  }
-}/*# sourceMappingURL=style.css.map */
+/* -------- media -------- *//*# sourceMappingURL=style.css.map */
