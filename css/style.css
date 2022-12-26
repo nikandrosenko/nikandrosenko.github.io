@@ -6,33 +6,55 @@
 }
 
 body {
+    background-color: rgb(44, 44, 44);
+    color: rgb(202, 202, 202);
+    font-family: PressStart2P;
+}
+
+.links {
+    position: absolute;
+}
+
+.links__list {
+    list-style: none;
+    display: flex;
+}
+
+.links__item a {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+    transition: .4s;
+}
+
+.links__item a:hover {
+    color: white;
+}
+
+main {
+    height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: rgb(44, 44, 44);
 }
 
 .notfound {
     -moz-user-select: none;
-    -o-user-select:none;
+    -o-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-     user-select: none;
-    color: rgb(202, 202, 202);
-    font-family: PressStart2P;
+    user-select: none;
     font-size: 6vw;
     font-weight: 10;
     max-width: 70vw;
     text-align: center;
     text-transform: uppercase;
+    transition: 0.4s;
 }
 
 .notfound:hover {
     color: white;
     text-shadow: 0vh 0vh 1vh white;
-    transition: 0.2s;
     cursor: default;
 }
