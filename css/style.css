@@ -41,6 +41,7 @@ body {
 }
 .links__item a:hover {
   color: white;
+  text-shadow: 0vh 0vh 0.5vh white;
 }
 main {
   height: 100vh;
@@ -50,14 +51,16 @@ main {
   align-items: center;
 }
 .notfound {
-  font-size: 6vw;
+  max-width: 1000px;
+}
+.notfound__title {
+  font-size: clamp(25px, 8vw, 100px);
   font-weight: 10;
-  max-width: 70vw;
   text-align: center;
   text-transform: uppercase;
   transition: 0.4s;
 }
-.notfound:hover {
+.notfound__title:hover {
   color: white;
   text-shadow: 0vh 0vh 1vh white;
   cursor: default;
