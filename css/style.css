@@ -39,13 +39,14 @@ body {
   color: rgb(202, 202, 202);
   transition: 0.4s;
 }
-.links__item a:hover::before {
-  content: "-> ";
-}
 .links__item a:hover,
 .links__item a:focus {
   color: white;
   text-shadow: 0vh 0vh 0.5vh white;
+}
+.links__item a:hover::before,
+.links__item a:focus::before {
+  content: "-> ";
 }
 main {
   height: 100vh;
@@ -59,8 +60,11 @@ main {
   max-width: 1100px;
   margin: 0 auto;
 }
+.hero {
+  padding: 50px;
+}
 .hero__title h1 {
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(20px, 6vw, 80px);
   transition: 0.4s;
 }
 .hero__title h1:hover {
@@ -68,6 +72,13 @@ main {
   text-shadow: 0vh 0vh 1vh white;
   cursor: default;
 }
-.hero__title p {
-  font-size: clamp(15px, 8vw, 30px);
+.hero__subtitle {
+  font-size: clamp(15px, 2vw, 30px);
+  transition: 0.4s;
+}
+@media (max-width: 500px) {
+  .hero {
+    padding: 0;
+    text-align: center;
+  }
 }
