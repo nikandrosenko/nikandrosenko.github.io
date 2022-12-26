@@ -13,9 +13,6 @@ $color-brown: #3f1d14;
   font-family: "Roboto", sans-serif;
   outline: none;
 }
-.hidden {
-  display: none;
-}
 button {
   padding: 0;
   border: none;
@@ -111,7 +108,7 @@ header {
   position: absolute;
   top: 85%;
   left: 0;
-  display: flex;
+  display: none;
   border: 1px solid #afabab;
   border-radius: 10px;
   box-shadow: 2px -4px 4px rgba(0, 0, 0, 0.25);
@@ -123,10 +120,10 @@ header {
     flex-direction: column;
     gap: 15px;
     padding: 20px;
+    &_sublist {
+      display: none;
+    }
   }
-  // &__list_sublist {
-  //   display: none;
-  // }
   &__link {
     text-decoration: none;
     color: $color-brown;
@@ -143,8 +140,8 @@ header {
     }
   }
 }
-.hidden {
-  display: none;
+.show {
+  display: flex;
 }
 /* -------- main -------- */
 main {

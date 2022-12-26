@@ -3,10 +3,10 @@ const burgerMenu = document.querySelector("#burg-menu");
 const burgerSubMenu = document.querySelector("#burg-submenu");
 const burgerLink = document.querySelector("#burg-link");
 burgerBtn.addEventListener("click", () => {
-  burgerMenu.classList.toggle("hidden");
-  burgerSubMenu.classList.add("hidden");
+  burgerMenu.classList.toggle("show");
+  burgerSubMenu.classList.remove("show");
 });
 burgerLink.addEventListener("mouseover", (e) => {
   e.preventDefault();
-  burgerSubMenu.classList.toggle("hidden");
+  burgerSubMenu.classList.add("show");
 });
