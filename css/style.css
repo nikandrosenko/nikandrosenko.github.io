@@ -6,6 +6,12 @@
 }
 
 body {
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     background-color: rgb(44, 44, 44);
     color: rgb(202, 202, 202);
     font-family: PressStart2P;
@@ -39,12 +45,6 @@ main {
 }
 
 .notfound {
-    -moz-user-select: none;
-    -o-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     font-size: 6vw;
     font-weight: 10;
     max-width: 70vw;
