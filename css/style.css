@@ -1,60 +1,65 @@
 @font-face {
-    font-family: 'PressStart2P';
-    src: url('../font/PressStart2P-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "PressStart2P";
+  src: url("../font/PressStart2P-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    -moz-user-select: none;
-    -o-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: rgb(44, 44, 44);
-    color: rgb(202, 202, 202);
-    font-family: PressStart2P;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: rgb(44, 44, 44);
+  color: rgb(202, 202, 202);
+  font-family: PressStart2P;
 }
 
 .links {
-    position: absolute;
+  position: absolute;
 }
 
 .links__list {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.links__item::before {
+  content: "->";
 }
 
 .links__item a {
-    text-decoration: none;
-    color: rgb(202, 202, 202);
-    transition: .4s;
+  text-decoration: none;
+  color: rgb(202, 202, 202);
+  transition: 0.4s;
 }
 
 .links__item a:hover {
-    color: white;
+  color: white;
 }
 
 main {
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .notfound {
-    font-size: 6vw;
-    font-weight: 10;
-    max-width: 70vw;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.4s;
+  font-size: 6vw;
+  font-weight: 10;
+  max-width: 70vw;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.4s;
 }
 
 .notfound:hover {
-    color: white;
-    text-shadow: 0vh 0vh 1vh white;
-    cursor: default;
+  color: white;
+  text-shadow: 0vh 0vh 1vh white;
+  cursor: default;
 }
