@@ -25,6 +25,7 @@ body {
     font-family: PressStart2P;
     font-size: 6vw;
     font-weight: 10;
+    max-width: 70vw;
     text-align: center;
     text-transform: uppercase;
 }
