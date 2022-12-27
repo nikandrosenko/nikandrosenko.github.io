@@ -6,6 +6,9 @@ $color-main: #ffe4c7;
 $color-main-light: #fcead6;
 $color-brown: #3f1d14;
 /* -------- general -------- */
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 1px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -154,7 +157,46 @@ main {
 }
 .swiper {
   border-radius: 16px;
-  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.16), 0px -16px 16px rgba(0, 0, 0, 0.16);
+  &-button-next::after {
+    display: none;
+  }
+  &-button-prev::after {
+    display: none;
+  }
+  &-pagination {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(91.67deg, rgba(250, 250, 250, 0.7), rgba(200, 200, 200, 0.5), rgba(0, 0, 0, 0.1))
+        padding-box,
+      linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3)) border-box;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    min-height: 25px;
+    &-bullet {
+      height: 20px;
+      width: 20px;
+      opacity: 1;
+      background-image: url(../img/slider/icons/pag.svg);
+      background-color: transparent;
+      margin: 0 10px;
+      // border: 2px solid black;
+      &-active {
+        background-image: url(../img/slider/icons/pag-active.svg);
+        // background-size: 50%;
+      }
+    }
+  }
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  width: auto;
 }
 /* -------- trands -------- */
 .trands {
