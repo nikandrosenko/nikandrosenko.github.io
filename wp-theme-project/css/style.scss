@@ -287,23 +287,35 @@ main {
 }
 /* -------- advertising banner -------- */
 .ad-banner {
+  font-weight: 500;
+  color: #fff;
   position: relative;
   margin-bottom: 120px;
   min-height: 580px;
-  background-image: url(../img/advertising/ad-banner.png);
-  background-size: 100%;
+  background-image: linear-gradient(258.02deg, rgba(0, 0, 0, 0.5) 33.36%, rgba(0, 0, 0, 0) 48.73%),
+    url(../img/advertising/ng-banner.jpg);
+  background-size: cover;
+  background-position: 0% 42%;
   background-repeat: no-repeat;
   box-shadow: 0px -16px 16px rgba(50, 50, 50, 0.16), 0px 16px 16px rgba(50, 50, 50, 0.16);
   border-radius: 16px;
+  font-weight: 500;
   &__title {
     position: absolute;
+    top: 220px;
+    right: 55px;
+    font-size: 48px;
+    line-height: 59px;
+    max-width: 450px;
+    text-align: right;
+  }
+  &__subtitle {
+    position: absolute;
     top: 120px;
-    left: 100px;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 40px;
+    right: 75px;
+    font-size: 28px;
+    line-height: 34px;
     letter-spacing: 0.25px;
-    color: #323232;
   }
 }
 /* -------- brands -------- */
@@ -698,6 +710,21 @@ input:active {
 //   }
 // }
 // @media screen and (max-width: 767px) {
+//   .ad-banner__title {
+//   margin-top: 50px;
+//   text-align: right;
+// }
+
+// .ad-banner__text {
+//   margin-bottom: 30px;
+//   font-size: 31px;
+//   line-height: 35px;
+// }
+
+// .ad-banner___text {
+//   font-size: 35px;
+//   line-height: 35px;
+// }
 //   .error_wrapper {
 //     padding: 60px 20px;
 //   }
