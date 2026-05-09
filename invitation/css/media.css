@@ -1,0 +1,249 @@
+@media (min-width: 350px) {
+  body {
+    background-image: url("../assets/images/bg-mob.webp");
+  }
+}
+
+@media (min-width: 426px) {
+  body {
+    background-image: url("../assets/images/bg-tablet.webp");
+  }
+  :root {
+    --container-width: 490px;
+
+    --gap: 40px;
+
+    --title-size-header: 56px;
+    --title-size: 44px;
+    --title-padding: 45px 0 0;
+    --text-size: 32px;
+
+    --rounded-padding: 15px 70px;
+
+    --header-logo-width: 206px;
+
+    --header-padding: 60px 0 0;
+
+    --date-padding: 30px 0 288px;
+    --date-bottom-padding: 33px;
+
+    --date-title-padding: 8px 0 30px;
+    --date-title-border-width: 107px;
+    --date-title-border-height: 19px;
+    --date-title-background-image-left: url("../assets/images/left-line-tablet.webp");
+    --date-title-background-image-right: url("../assets/images/right-line-tablet.webp");
+
+    --background-branch-width: 1472px;
+    --background-branch-height-top: 281px;
+    --background-branch-height-bottom: 118px;
+
+    --date-calendar-gap: 24px;
+    --date-calendar-name-size: 18px;
+    --date-calendar-number-size: 24px;
+    --date-star-size: 65px;
+
+    --location-gap: 35px;
+    --location-map-width: 490px;
+    --location-map-height: 438px;
+    --location-transfer-border-width: 3px;
+    --location-transfer-padding: 30px 18px;
+
+    --program-items-direction: column;
+    --program-items-wrap: wrap;
+    --program-items-align-content: center;
+
+    --program-items-gap: 0px;
+    --program-items-background-image: url("../assets/images/vertical-line-tablet.webp");
+    --program-items-background-size: 14px 625px;
+    --program-items-height: 720px;
+    --program-items-margin: 0 auto 0;
+
+    --program-item-width: 50%;
+    --program-item-content-gap: 16px;
+    --program-item-content-padding: 20px;
+
+    /* Колонка 1: 1, 3, 5 / Колонка 2: 2, 4 */
+    --program-item-1-order: 1;
+    --program-item-3-order: 2;
+    --program-item-5-order: 3;
+    --program-item-2-order: 4;
+    --program-item-4-order: 5;
+
+    /* content растягивается на всю ширину item кроме пунктира */
+    --program-item-weight: none;
+    --program-item-content-width: calc(100% - var(--program-item-dotted-width));
+    --program-item-max-height: 235px;
+
+    --program-item-content-line-height: 33px;
+    --program-item-content-odd-margin-left: auto;
+    --program-item-content-odd-margin-right: 0;
+    --program-item-content-even-margin-left: 0;
+    --program-item-content-even-margin-right: auto;
+
+    /* 1, 3, 5 → икона и текст к правому краю; 2, 4 → к левому */
+    --program-item-content-odd-align: flex-end;
+    --program-item-content-odd-text-align: right;
+    --program-item-content-even-align: flex-start;
+    --program-item-content-even-text-align: left;
+
+    --icon-gathering-width: 46.4px;
+    --icon-ceremony-width: 77.6px;
+    --icon-banquet-width: 102.4px;
+    --icon-cake-width: 72px;
+    --icon-fireworks-width: 72.57px;
+
+    --program-item-dotted-width: 60px;
+    --program-item-dotted-height: 14px;
+
+    --right-branch-padding: 215px 0 35px;
+    --right-branch-background-position: calc(50% + 185px) calc(50% + 160px);
+    --right-branch-background-size: 1096px 521.2px;
+
+    --left-branch-padding: 215px 0 0;
+    --left-branch-background-position: calc(50% - 247px) calc(50% + 110px);
+    --left-branch-background-size: 975.2px 505.6px;
+
+    --dress-code-text-margin-bottom: 35px;
+    --dress-code-warning-padding: 30px 65px;
+
+    --dress-code-warning-icon-max-width: 55.2px;
+    --dress-code-warning-icon-margin: 0 0 20px;
+    --dress-code-warning-text-max-width: 337px;
+
+    --gifts-image-max-width: 176px;
+
+    --contacts-info-font-size: 44px;
+    --contacts-icons-gap: 16px;
+
+    --contacts-icon-width: 92px;
+
+    --footer-title-width: 400px;
+    --footer-logo-width: 102.8px;
+    --footer-logo-padding: 45px 0 85px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-image: url("../assets/images/bg-laptop.webp");
+  }
+  :root {
+    --container-width: 720px;
+
+    --title-size-header: 64px;
+    --title-size: 48px;
+    --title-padding: 60px 0 0;
+    --text-size: 36px;
+
+    --rounded-padding: 20px 160px;
+
+    --header-logo-width: 257px;
+
+    --header-padding: 60px 0 0;
+
+    --date-padding: 60px 0 0;
+    --date-bottom-padding: 60px;
+
+    --date-title-padding: 4px 0 60px;
+    --date-title-border-width: 232px;
+    --date-title-border-height: 24px;
+    --date-title-background-image-left: url("../assets/images/left-line.webp");
+    --date-title-background-image-right: url("../assets/images/right-line.webp");
+
+    --background-branch-width: 1840px;
+    --background-branch-height-top: 351px;
+    --background-branch-height-bottom: 148px;
+
+    --date-calendar-gap: 40px;
+    --date-calendar-name-size: 28px;
+    --date-calendar-number-size: 40px;
+    --date-star-size: 120px;
+
+    --location-gap: 40px;
+    --location-map-width: 700px;
+    --location-map-height: 625px;
+    --location-transfer-border-width: 4px;
+    --location-transfer-padding: 35px 100px;
+
+    --program-items-direction: column;
+    --program-items-wrap: wrap;
+    --program-items-max-width: 900px;
+
+    --program-items-gap: 0px;
+    --program-items-background-image: url("../assets/images/vertical-line.webp");
+    --program-items-background-size: 18px 702px;
+    --program-items-height: 760px;
+    --program-items-margin: 45px auto 0;
+
+    --program-item-width: 245px;
+    --program-item-content-line-height: 37px;
+    --program-item-content-gap: 20px;
+    --program-item-content-padding: 25px;
+    --program-item-max-height: 245px;
+
+    --icon-gathering-width: 58px;
+    --icon-ceremony-width: 97px;
+    --icon-banquet-width: 128px;
+    --icon-cake-width: 90px;
+    --icon-fireworks-width: 90.72px;
+
+    --program-item-dotted-width: 75px;
+    --program-item-dotted-height: 18px;
+
+    --right-branch-padding: 255px 0 40px;
+    --right-branch-background-position: calc(50% + 245px) calc(50% + 195px);
+    --right-branch-background-size: 1370px 651.5px;
+
+    --left-branch-padding: 305px 0 0;
+    --left-branch-background-position: calc(50% - 310px) calc(50% + 155px);
+    --left-branch-background-size: 1219px 632px;
+
+    --dress-code-text-margin-bottom: 40px;
+    --dress-code-warning-padding: 35px 35px;
+
+    --dress-code-warning-icon-max-width: 69px;
+    --dress-code-warning-icon-margin: 0 0 25px;
+    --dress-code-warning-text-max-width: 700px;
+
+    --gifts-image-max-width: 220px;
+
+    --contacts-info-font-size: 48px;
+    --contacts-icons-gap: 20px;
+
+    --contacts-icon-width: 115px;
+
+    --footer-title-width: 720px;
+    --footer-logo-width: 128.5px;
+    --footer-logo-padding: 60px 0 100px;
+  }
+}
+
+@media (min-width: 1441px) {
+  body {
+    background-image: url("../assets/images/bg.webp");
+  }
+}
+
+@media (hover: hover) {
+  #confettiButton:hover,
+  #dressCodeLink:hover {
+    cursor: pointer;
+    transform: scale(0.99);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #contacts-info-phone:hover:not(:active) {
+    color: #8b9063;
+    transform: scale(0.98);
+  }
+
+  .contacts-icons a:hover:not(:active) {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+
+  .contacts-icons a:hover:not(:active)::before {
+    opacity: 1;
+  }
+}

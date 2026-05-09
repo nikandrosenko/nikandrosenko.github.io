@@ -1,0 +1,722 @@
+:root {
+  --container-width: 320px;
+
+  --gap: 25px;
+
+  --title-size-header: 48px;
+  --title-size: 34px;
+  --title-padding: 35px 0 0;
+
+  --text-size: 26px;
+
+  --rounded-padding: 12px 20px;
+
+  --header-logo-width: 158px;
+
+  --header-padding: 60px 0 0;
+
+  --background-branch-width: 1113px;
+  --background-branch-height-top: 213px;
+  --background-branch-height-bottom: 89px;
+
+  --date-padding: 25px 0 0;
+  --date-bottom-padding: 0;
+
+  --date-title-padding: 4px 0 35px;
+  --date-title-border-width: 74px;
+  --date-title-border-height: 17px;
+  /* --date-title-gap: 32px; */
+  --date-title-background-image-left: url("../assets/images/left-line-mobile.webp");
+  --date-title-background-image-right: url("../assets/images/right-line-mobile.webp");
+
+  --date-calendar-gap: 21px;
+  --date-calendar-name-size: 14px;
+  --date-calendar-number-size: 18px;
+  --date-star-size: 55px;
+
+  --location-gap: 25px;
+  --location-map-width: 320px;
+  --location-map-height: 286px;
+  --location-transfer-border-width: 3px;
+  --location-transfer-padding: 25px 22px;
+
+  --program-items-direction: column;
+  --program-items-wrap: nowrap;
+  --program-items-align-content: normal;
+  --program-items-max-width: none;
+
+  --program-items-width: 100%;
+  --program-items-height: 1037px;
+
+  --program-items-gap: 28px;
+  --program-items-background-image: url("../assets/images/vertical-line-mobile.webp");
+  --program-items-background-size: 17px 1037px;
+  --program-items-margin: 25px auto 0;
+
+  --program-item-width: 100%;
+  --program-item-max-height: 160px;
+  --program-item-content-gap: 15px;
+  --program-item-content-padding: 15px;
+  --program-item-weight: 160px;
+
+  --program-item-1-order: 1;
+  --program-item-2-order: 2;
+  --program-item-3-order: 3;
+  --program-item-4-order: 4;
+  --program-item-5-order: 5;
+
+  --program-item-content-width: auto;
+
+  --program-item-content-line-height: 30px;
+
+  --program-item-content-odd-align: center;
+  --program-item-content-odd-text-align: center;
+  --program-item-content-even-align: center;
+  --program-item-content-even-text-align: center;
+
+  --program-item-content-odd-margin-left: 0;
+  --program-item-content-odd-margin-right: 0;
+  --program-item-content-even-margin-left: 0;
+  --program-item-content-even-margin-right: 0;
+
+  --icon-gathering-width: 43.5px;
+  --icon-ceremony-width: 72.75px;
+  --icon-banquet-width: 96px;
+  --icon-cake-width: 67.5px;
+  --icon-fireworks-width: 68.04px;
+
+  --program-item-dotted-width: 0;
+  --program-item-dotted-height: 0;
+
+  --right-branch-padding: 175px 0 25px;
+  --right-branch-background-position: calc(50% + 130px) calc(50% + 120px);
+  --right-branch-background-size: 756.04px 359.53px;
+
+  --left-branch-padding: 150px 0 0;
+  --left-branch-background-position: calc(50% - 171px) calc(50% + 55px);
+  --left-branch-background-size: 672.71px 348.77px;
+
+  --dress-code-text-margin-bottom: 25px;
+  --dress-code-warning-padding: 20px 20px;
+
+  --dress-code-warning-icon-max-width: 51.75px;
+  --dress-code-warning-icon-margin: 0 0 15px;
+  --dress-code-warning-text-max-width: 288px;
+
+  --gifts-image-max-width: 132px;
+  --contacts-info-font-size: 34px;
+
+  --contacts-icons-gap: 30px;
+
+  --contacts-icon-width: 69px;
+
+  --footer-title-width: 320px;
+  --footer-logo-width: 94.8px;
+  --footer-logo-padding: 35px 0 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Geologica";
+  text-align: center;
+  background-image: null;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
+  color: #2a2b27;
+  overflow-x: hidden;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  will-change: opacity;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1;
+    transition: none;
+  }
+}
+
+.title {
+  font-family: "Literature Decor";
+  font-weight: 400;
+  font-size: var(--title-size);
+  text-align: center;
+  padding: var(--title-padding);
+}
+
+.text {
+  font-size: var(--text-size);
+  font-weight: 100;
+}
+
+.rounded {
+  border-radius: 100px;
+  background-color: #8b9063;
+  padding: var(--rounded-padding);
+  font-size: calc(var(--text-size) - 2px);
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+  max-width: var(--container-width);
+}
+
+.bolder {
+  font-weight: 700;
+}
+
+#confettiButton,
+#dressCodeLink {
+  display: block;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  transition: transform 0.1s ease-out;
+}
+
+/* Состояние нажатия */
+#confettiButton:active,
+#dressCodeLink:active {
+  transform: scale(0.92) !important;
+}
+
+/* Явно сбрасываем всё остальное */
+#confettiButton:focus,
+#confettiButton:focus-visible,
+#dressCodeLink:focus,
+#dressCodeLink:focus-visible {
+  outline: none;
+  transform: scale(1);
+}
+
+.header {
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  padding: var(--header-padding);
+  transition:
+    gap 0.3s ease,
+    max-width 0.3s ease;
+}
+
+.header-title {
+  font-family: "Literature Decor";
+  font-weight: 400;
+  font-size: var(--title-size-header);
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.header-logo {
+  width: 100%;
+  max-width: var(--header-logo-width);
+  height: auto;
+  object-fit: contain;
+  padding: 20px 0 0;
+  transition:
+    max-width 0.3s ease,
+    max-height 0.3s ease;
+}
+
+.main {
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 25px; */
+  transition:
+    gap 0.3s ease,
+    max-width 0.3s ease;
+}
+
+.date {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--container-width);
+  /* gap: var(--gap); */
+}
+.date::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: var(--background-branch-height-top);
+  background-image: url("../assets/images/branch-top.webp");
+  background-size: var(--background-branch-width)
+    var(--background-branch-height-top);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.date::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: var(--background-branch-height-bottom);
+  background-image: url("../assets/images/branch-bottom.webp");
+  background-size: var(--background-branch-width)
+    var(--background-branch-height-bottom);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.date-title {
+  font-family: "Literature Decor";
+  font-weight: 400;
+  font-size: var(--title-size);
+  text-align: center;
+  /* padding: var(--date-padding); */
+}
+
+.date-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--date-title-padding);
+  /* gap: var(--date-title-gap); */
+}
+
+.date-title-border-left {
+  display: block;
+  width: var(--date-title-border-width);
+  height: var(--date-title-border-height);
+  background-image: var(--date-title-background-image-left);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.date-title-border-right {
+  display: block;
+  width: var(--date-title-border-width);
+  height: var(--date-title-border-height);
+  background-image: var(--date-title-background-image-right);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.date-border {
+  width: var(--container-width);
+  height: calc(var(--container-width) / 20.58);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.date-calendar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: var(--date-calendar-gap);
+  padding-bottom: var(--date-bottom-padding);
+}
+
+.date-calendar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--date-calendar-gap);
+  color: #65655f;
+}
+
+.date-calendar-item-name {
+  font-size: var(--date-calendar-name-size);
+  font-weight: 400;
+}
+
+.date-calendar-item-number {
+  font-size: var(--date-calendar-number-size);
+  font-weight: 4600;
+}
+
+.chosen-name {
+  font-weight: 900;
+  color: #2a2b27;
+}
+
+.chosen-number {
+  font-weight: 900;
+  color: #fff;
+  position: relative;
+}
+
+.chosen-number::before {
+  content: "";
+  display: block;
+  width: var(--date-star-size);
+  height: var(--date-star-size);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url("../assets/images/star.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--container-width);
+  width: 100%;
+  gap: var(--location-gap);
+}
+
+.location-map {
+  display: block;
+  width: var(--location-map-width);
+  height: var(--location-map-height);
+  background-image: url("../assets/images/map.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.location-transfer {
+  border: var(--location-transfer-border-width) solid #2a2b27;
+  border-radius: 30px;
+  padding: var(--location-transfer-padding);
+}
+
+.program-items {
+  height: var(--program-items-height);
+  max-width: var(--program-items-max-width);
+  display: flex;
+  flex-direction: var(--program-items-direction);
+  flex-wrap: var(--program-items-wrap);
+  align-content: var(--program-items-align-content);
+  gap: var(--program-items-gap);
+  align-items: center;
+  justify-content: center;
+  background-image: var(--program-items-background-image);
+  background-size: var(--program-items-background-size);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: var(--program-items-margin);
+}
+
+.program-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: var(--program-item-width);
+}
+
+.program-item:nth-child(1) {
+  order: var(--program-item-1-order);
+}
+
+.program-item:nth-child(2) {
+  order: var(--program-item-2-order);
+}
+
+.program-item:nth-child(3) {
+  order: var(--program-item-3-order);
+}
+
+.program-item:nth-child(4) {
+  order: var(--program-item-4-order);
+}
+
+.program-item:nth-child(5) {
+  order: var(--program-item-5-order);
+}
+
+.program-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--program-item-content-padding);
+  background-color: #fff;
+  gap: var(--program-item-content-gap);
+  width: var(--program-item-content-width);
+  max-width: var(--program-item-weight);
+  min-height: var(--program-item-max-height);
+  line-height: var(--program-item-content-line-height);
+}
+
+.program-item:nth-child(odd) .program-item-content {
+  margin-left: var(--program-item-content-odd-margin-left);
+  margin-right: var(--program-item-content-odd-margin-right);
+  align-items: var(--program-item-content-odd-align);
+  text-align: var(--program-item-content-odd-text-align);
+}
+
+.program-item:nth-child(even) .program-item-content {
+  margin-left: var(--program-item-content-even-margin-left);
+  margin-right: var(--program-item-content-even-margin-right);
+  align-items: var(--program-item-content-even-align);
+  text-align: var(--program-item-content-even-text-align);
+}
+
+.program-item-icon {
+  height: auto;
+}
+
+#ceremony {
+  width: var(--icon-ceremony-width);
+}
+
+#banquet {
+  width: var(--icon-banquet-width);
+}
+
+#cake {
+  width: var(--icon-cake-width);
+}
+
+#fireworks {
+  width: var(--icon-fireworks-width);
+}
+
+#gathering {
+  width: var(--icon-gathering-width);
+}
+
+.program-item-dotted {
+  width: var(--program-item-dotted-width);
+  height: var(--program-item-dotted-height);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.program-item-dotted.left {
+  background-image: url("../assets/images/left-line-dotted.webp");
+}
+
+.program-item-dotted.right {
+  background-image: url("../assets/images/right-line-dotted.webp");
+}
+
+.dress-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--container-width);
+  width: 100%;
+}
+
+.dress-code .text {
+  margin-bottom: var(--dress-code-text-margin-bottom);
+}
+
+.right-branch {
+  display: block;
+  width: 100vw;
+  padding: var(--right-branch-padding);
+  background-image: url("../assets/images/branch-right.webp");
+  background-size: var(--right-branch-background-size);
+  background-position: var(--right-branch-background-position);
+  background-repeat: no-repeat;
+}
+
+.left-branch-text {
+  font-size: var(--text-size);
+  max-width: var(--container-width);
+  font-weight: 250;
+  text-align: center;
+  margin-bottom: var(--dress-code-text-margin-bottom);
+}
+
+.left-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: var(--left-branch-padding);
+  background-image: url("../assets/images/branch-left.webp");
+  background-size: var(--left-branch-background-size);
+  background-position: var(--left-branch-background-position);
+  background-repeat: no-repeat;
+}
+
+.dress-code-warning {
+  border: var(--location-transfer-border-width) solid #2a2b27;
+  border-radius: 30px;
+  padding: var(--dress-code-warning-padding);
+}
+
+.dress-code-warning .text {
+  margin-bottom: 0;
+  font-weight: 400;
+  max-width: var(--dress-code-warning-text-max-width);
+}
+
+.dress-code-warning-icon {
+  max-width: var(--dress-code-warning-icon-max-width);
+  height: auto;
+  margin: var(--dress-code-warning-icon-margin);
+}
+
+.gifts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--container-width);
+  width: 100%;
+  gap: var(--gap);
+}
+
+.gifts-image {
+  max-width: var(--gifts-image-max-width);
+  width: 100%;
+  height: auto;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--container-width);
+  width: 100%;
+  gap: var(--gap);
+}
+
+.contacts-info {
+  font-size: var(--contacts-info-font-size);
+  font-weight: 250;
+  max-width: var(--container-width);
+  text-align: center;
+}
+
+#contacts-info-phone {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#contacts-info-phone:active {
+  color: #8b9063;
+  transform: scale(0.9);
+}
+
+.contacts-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--contacts-icons-gap);
+}
+
+.contacts-icons a {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.contacts-icons a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #8b9063;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-mask-image: var(--contacts-icon-mask);
+  mask-image: var(--contacts-icon-mask);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transition: opacity 0.2s ease;
+}
+
+.contacts-icons a:active {
+  opacity: 0.9;
+  transform: scale(0.9);
+}
+
+.contacts-icons a:active::before {
+  opacity: 1;
+}
+
+.telegram-button {
+  width: var(--contacts-icon-width);
+  height: var(--contacts-icon-width);
+  --contacts-icon-mask: url("../assets/images/tg.webp");
+  background-image: var(--contacts-icon-mask);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.whatsapp-button {
+  width: var(--contacts-icon-width);
+  height: var(--contacts-icon-width);
+  --contacts-icon-mask: url("../assets/images/wa.webp");
+  background-image: var(--contacts-icon-mask);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .title {
+  max-width: var(--footer-title-width);
+}
+
+.footer-logo {
+  width: 100%;
+  padding: var(--footer-logo-padding);
+  max-width: var(--footer-logo-width);
+  height: auto;
+}
